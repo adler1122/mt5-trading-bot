@@ -7,7 +7,7 @@ if not mt5.initialize():
     raise RuntimeError("MT5 initialization failed")
 
 # --- Symbol and Timeframes ---
-symbol = "XAUUSD"  # Adjust if your broker uses a different name
+symbol = input("Enter symbol: ")  # Adjust if your broker uses a different name
 timeframes = {
     "M15": mt5.TIMEFRAME_M15,
     "M30": mt5.TIMEFRAME_M30,

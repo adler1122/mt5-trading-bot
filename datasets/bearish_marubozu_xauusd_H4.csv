@@ -1,0 +1,69 @@
+candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_week,success
+14.69,False,0.007661776134271453,1,Tokyo,True,True,False
+13.89,False,0.007096655528647191,3,Tokyo,True,False,True
+35.35,False,0.018154086338472285,3,London,True,False,True
+24.05,False,0.012746516570471543,4,London,True,True,False
+14.87,False,0.007994150883549898,2,Sydney,True,False,True
+7.73,False,0.00420872671044178,4,New York,True,False,False
+19.9,False,0.010841378108043321,1,London,True,True,False
+19.76,False,0.009940387856226578,0,New York,True,True,False
+17.48,False,0.008875574398943868,1,Tokyo,True,True,False
+24.29,False,0.012338091126123838,0,Tokyo,True,True,False
+11.87,False,0.005873853188309696,2,Tokyo,False,False,False
+7.04,False,0.003548011551196698,0,Tokyo,True,True,False
+26.08,False,0.01300099700897308,0,London,False,False,False
+32.52,False,0.01593914501092998,4,Tokyo,True,False,False
+24.96,False,0.012402977509664981,1,London,True,True,False
+5.8,False,0.00291196818925785,2,Tokyo,True,False,True
+6.84,False,0.0035595707698872804,2,New York,True,False,False
+8.92,False,0.004643366544856378,3,New York,True,True,False
+7.85,False,0.004132231404958678,2,New York,True,True,False
+4.36,False,0.0022425099652822428,0,Tokyo,False,False,True
+18.36,False,0.009427858397264071,2,New York,False,False,False
+9.44,False,0.00494181328949917,1,London,True,True,True
+16.76,False,0.008857367839721807,2,London,True,True,True
+8.48,False,0.0046384168120730115,3,Tokyo,True,False,False
+5.25,False,0.002618780396558174,0,Sydney,False,False,False
+6.37,False,0.0032110253605472355,0,New York,True,True,True
+18.26,False,0.009155727594540659,0,London,True,True,False
+11.18,True,0.00538652405386524,3,New York,True,False,False
+16.09,False,0.006938185895086349,3,Tokyo,True,False,False
+9.81,False,0.004149570661139546,0,Sydney,True,False,True
+5.1,False,0.0021654855570605444,0,New York,False,False,False
+40.48,False,0.017125040718507144,4,London,True,False,False
+6.79,False,0.002916290855989348,4,New York,True,False,False
+1.88,False,0.0007973095045230351,3,New York,False,False,False
+22.75,False,0.00940288575597135,2,New York,True,False,True
+17.88,False,0.007451241873645607,2,New York,False,False,False
+5.43,False,0.002156276432255989,1,New York,True,False,False
+14.06,False,0.005569993344531424,2,Sydney,True,False,False
+23.23,False,0.00921913198082357,4,London,True,False,False
+24.1,False,0.009653553589239293,2,Tokyo,True,False,False
+6.41,False,0.0024068337557495542,2,New York,True,False,True
+23.78,False,0.008619471015306992,4,London,True,False,False
+67.98,True,0.024927395934172317,2,Tokyo,True,False,False
+24.11,False,0.009147718002906325,0,London,True,False,False
+20.03,False,0.007629226450524296,1,Sydney,True,False,True
+54.13,True,0.020207186187587496,0,London,True,False,False
+18.61,False,0.0068525180518375865,3,Tokyo,True,False,True
+55.35,False,0.020974092164746095,2,New York,True,False,False
+9.32,False,0.003478624375751152,2,New York,True,False,False
+10.75,False,0.003889839738602769,0,Sydney,True,False,False
+57.02,True,0.01785977166303854,3,Sydney,True,False,False
+29.14,False,0.00872609233367571,3,Tokyo,True,False,False
+13.34,False,0.003996213482876794,0,New York,False,False,False
+17.59,False,0.0051804926032932505,1,Tokyo,False,False,False
+24.09,False,0.007103282135053768,0,New York,False,False,True
+27.02,False,0.008068682344158268,3,Tokyo,True,False,True
+21.33,False,0.006481489922240353,4,Tokyo,True,False,False
+17.4,False,0.005163112822917099,3,Tokyo,True,False,False
+17.82,False,0.0052998331534007265,4,Tokyo,True,False,True
+11.48,False,0.0033928460599540722,2,Sydney,True,False,False
+20.26,False,0.005955582991607508,0,New York,True,False,True
+12.16,False,0.0036405550648922953,4,Sydney,True,False,False
+16.12,False,0.0047551482149020205,2,Sydney,True,False,False
+20.38,False,0.005589028172760755,1,New York,True,False,False
+94.01,True,0.023166984152018396,3,London,True,False,False
+40.49,True,0.009770281357077361,1,Tokyo,False,False,False
+116.59,True,0.02700336528774021,4,London,True,False,False
+71.85,True,0.016795113638754286,1,Tokyo,True,False,True

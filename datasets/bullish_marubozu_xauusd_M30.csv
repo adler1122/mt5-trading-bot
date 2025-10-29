@@ -1,0 +1,713 @@
+candle_size,noisy_day,percentage,day_of_week,session,highest_of_day,highest_of_week,success
+5.89,False,0.003177960386103302,2,Tokyo,True,True,True
+5.69,False,0.0030614276260215972,2,Tokyo,True,True,True
+3.13,False,0.0016855687313537325,3,Sydney,False,False,False
+3.96,False,0.0021353809983445404,3,Tokyo,False,False,False
+3.27,False,0.001777299483115655,4,Tokyo,False,False,False
+17.5,False,0.009446591669725564,4,London,True,False,False
+2.68,False,0.0014324733148394614,1,Sydney,False,False,True
+3.59,False,0.0019139215132241846,1,New York,False,False,False
+1.89,False,0.0010063415491270386,2,Sydney,True,False,False
+2.98,False,0.0015868705103013457,2,New York,False,False,False
+4.98,False,0.002621121608463381,4,Tokyo,False,False,True
+10.95,False,0.005725969231412824,4,London,True,True,False
+1.89,False,0.000985956638774701,1,New York,True,False,False
+6.51,False,0.0034034410828275223,1,Tokyo,False,False,False
+4.73,False,0.002453306777454474,4,Sydney,False,False,True
+3.82,False,0.001979038767400776,4,Tokyo,False,False,True
+3.16,False,0.0016376111606309985,4,New York,False,False,False
+3.83,False,0.001981888745148771,0,Sydney,True,True,False
+3.58,False,0.0018493550503406843,1,Sydney,True,True,False
+3.57,False,0.001840177729210373,1,Tokyo,True,True,False
+2.28,False,0.0011763127753758524,1,New York,False,False,False
+4.23,False,0.0021875727251570863,2,Tokyo,False,False,False
+2.86,False,0.0014690850066006091,2,New York,False,False,False
+3.55,False,0.0018393782383419688,3,New York,False,False,False
+1.27,False,0.0006575813433299505,3,New York,False,False,False
+2.86,False,0.0014862933610497596,4,Sydney,False,False,True
+5.84,False,0.0030229151461507,0,Sydney,True,True,False
+4.22,False,0.002185633859715453,0,Tokyo,False,False,False
+8.34,False,0.004343026162306282,1,London,False,False,True
+6.26,False,0.003204455524102522,2,New York,True,True,False
+2.87,False,0.0014990389436737423,4,Tokyo,False,False,False
+2.58,False,0.0013747389061767338,0,Sydney,True,True,True
+4.64,False,0.0024784603633294694,1,London,False,False,False
+2.66,False,0.001417192786169051,2,Sydney,False,False,False
+3.24,False,0.0017204209721440483,3,Tokyo,False,False,False
+10.1,False,0.005344424336709316,3,London,True,True,False
+6.8,False,0.003655461959005069,4,Sydney,False,False,True
+3.14,False,0.0016836731958154824,4,Tokyo,False,False,False
+2.55,False,0.0013750559459036814,0,New York,False,False,True
+1.98,False,0.0010775451562168368,3,Tokyo,False,False,False
+3.53,False,0.0019121183888371287,0,London,False,False,False
+4.26,False,0.002315242556984315,2,Tokyo,True,False,False
+6.37,False,0.00346280340300617,2,Tokyo,False,False,False
+2.18,False,0.0011913023995453378,3,Sydney,False,False,False
+4.26,False,0.002326966040497949,1,London,True,True,False
+4.65,False,0.002541719733037437,2,Sydney,True,False,False
+2.62,False,0.0014296861784270178,2,Sydney,True,True,True
+2.78,False,0.001515969484297719,2,Tokyo,True,True,False
+3.26,False,0.0017737249311729434,2,Tokyo,False,False,False
+3.54,False,0.0019213547179027925,4,Tokyo,True,False,True
+8.08,False,0.004426572583737825,3,London,True,False,True
+3.45,False,0.0018803036826701403,4,Sydney,True,False,False
+7.73,False,0.0041498676659276,4,London,False,False,False
+4.66,False,0.0024919786096256687,4,New York,True,True,True
+6.66,False,0.0034908404748801008,1,London,False,False,False
+5.93,False,0.0031060292584813454,1,London,False,False,False
+11.68,False,0.006121817886400444,2,Tokyo,True,False,True
+4.87,False,0.002536048867109998,3,Sydney,False,False,False
+3.39,False,0.0017591016646602185,3,Tokyo,True,False,False
+6.26,False,0.0032248426214982638,4,London,True,True,True
+7.47,False,0.0037940351875177763,4,London,True,True,True
+8.39,False,0.004219961069727438,4,New York,True,True,False
+13.73,False,0.006904285383834016,0,Sydney,True,True,True
+5.45,False,0.00280188368840997,2,Tokyo,False,False,False
+3.67,False,0.0018907000226677931,2,London,False,False,True
+5.37,False,0.0027200753719209205,3,Sydney,True,False,True
+7.54,False,0.0038101783304950705,3,London,False,False,True
+6.99,False,0.00349541945033404,3,London,True,False,False
+3.69,False,0.0018737622505458794,2,New York,False,False,False
+6.37,False,0.0032154016223392176,3,London,True,True,False
+2.54,False,0.0012816307995055125,4,London,False,False,False
+5.83,False,0.002970579543254288,0,Sydney,False,False,False
+3.61,False,0.0018301369307437655,0,Tokyo,True,True,True
+4.19,False,0.0021174984207201516,0,London,True,True,False
+12.41,False,0.0062411047912171915,0,London,True,True,False
+2.85,False,0.0014085551189858404,2,Sydney,True,False,False
+2.19,False,0.0010831985517783746,2,Sydney,False,False,True
+2.08,False,0.0010412599245086555,0,Tokyo,False,False,True
+0.94,False,0.0004686993592780035,2,Sydney,True,False,False
+5.61,False,0.0027840500235726162,2,Sydney,True,True,True
+1.01,False,0.0005012033843634469,3,New York,True,False,True
+2.41,False,0.0011913824980473193,3,Tokyo,False,False,True
+2.55,False,0.0012569501951969714,3,London,False,False,True
+6.9,False,0.003463716316613791,0,London,False,False,False
+1.36,False,0.0006781452726792224,1,New York,False,False,False
+1.58,False,0.0007963709677419355,0,New York,True,True,False
+3.03,False,0.001529075136632704,0,Tokyo,False,False,False
+2.45,False,0.001224981625275621,2,Sydney,True,False,False
+9.85,False,0.004929633855824475,0,London,True,True,False
+16.89,False,0.008428354000848324,1,London,True,False,False
+2.9,False,0.0014368029647686003,1,New York,False,False,False
+13.41,False,0.006555982517379953,3,London,False,False,True
+3.15,False,0.001536720297391966,4,Sydney,False,False,False
+2.46,False,0.0012196270717547261,0,Sydney,False,False,True
+2.21,False,0.001091358024691358,1,Sydney,True,False,False
+1.61,False,0.0007921591009732241,1,London,True,True,False
+6.24,False,0.0030730287554726014,1,London,False,False,True
+2.73,False,0.0013436758640377213,2,Tokyo,False,False,False
+2.83,False,0.0014015590487227488,0,Tokyo,False,False,False
+1.77,False,0.0008760858267131933,0,London,False,False,False
+3.42,False,0.0017182734868391304,1,New York,False,False,False
+2.92,False,0.001465444124924093,2,Sydney,True,False,False
+5.86,False,0.0029848465554565135,4,Sydney,True,False,False
+3.03,False,0.0015338277354526816,0,London,False,False,False
+9.65,False,0.004902184901270504,1,London,False,False,False
+2.69,False,0.0013619563566401702,1,New York,True,False,True
+2.15,False,0.0010877814318239311,2,Sydney,False,False,False
+1.86,False,0.0009552962445558387,0,Tokyo,True,True,False
+7.24,False,0.0037274435606353133,1,Tokyo,False,False,True
+6.01,False,0.003077285434864978,1,Tokyo,True,True,True
+1.32,False,0.0006734109796599274,2,Sydney,False,False,False
+2.7,False,0.0013756770114181193,3,Tokyo,False,False,False
+8.82,False,0.004480705533315722,3,London,False,False,True
+3.14,False,0.001598826848070715,0,New York,True,True,False
+11.66,False,0.005918240972906029,2,London,True,True,False
+3.33,False,0.001713447734698603,3,New York,True,False,True
+11.38,False,0.005805944715978083,3,London,True,False,False
+1.13,False,0.0005747828033123766,3,New York,False,False,False
+1.97,False,0.0010040211812793372,1,Sydney,True,False,False
+2.65,False,0.0013478939792373463,1,Tokyo,True,False,False
+2.29,False,0.0011774808080911958,3,New York,True,False,False
+13.33,False,0.0068234053553238435,3,London,True,False,False
+2.79,False,0.0014239634158789785,3,London,False,False,False
+4.06,False,0.002072253243637774,4,New York,False,False,False
+1.96,False,0.0010136375625119593,3,New York,True,False,False
+1.82,False,0.0009482228636330482,4,London,False,False,True
+5.63,False,0.0029105835642499692,4,London,True,False,False
+5.31,False,0.002754592284029071,0,Tokyo,False,False,True
+2.88,False,0.001495777544639611,1,Sydney,True,False,True
+3.49,False,0.0018273208021362375,3,Tokyo,False,False,False
+2.5,False,0.0013019544940865227,4,London,False,False,True
+1.99,False,0.0010382590638972802,0,Sydney,False,False,False
+8.14,False,0.004235039488881721,0,London,True,True,True
+3.21,False,0.0016721972463443475,3,Sydney,True,False,False
+1.24,False,0.000646105909263804,3,Tokyo,False,False,False
+5.28,False,0.00274643821294259,3,Tokyo,True,False,False
+2.8,False,0.0014546134624475948,3,Tokyo,True,False,False
+6.51,False,0.003365802208710758,4,London,True,False,False
+2.22,False,0.0011515179807976596,1,Sydney,False,False,True
+2.89,False,0.0014960915255992132,1,Tokyo,True,True,True
+1.67,False,0.0008631204647412706,2,Sydney,True,False,True
+7.1,False,0.0036179265713776145,3,Tokyo,True,True,False
+2.41,False,0.0012291967377832636,3,Tokyo,False,False,False
+4.71,False,0.002403748009635406,3,London,False,False,False
+3.5,False,0.0017860058785107772,4,London,False,False,False
+2.25,False,0.0011507244449672426,0,New York,False,False,False
+3.68,False,0.001878471087879778,1,Sydney,True,False,False
+4.14,False,0.0021044819365300445,1,London,False,False,False
+11.26,False,0.005680356359123631,1,London,True,True,False
+1.04,False,0.0005256560591969593,2,Sydney,False,False,False
+2.27,False,0.0011567291572183466,4,London,False,False,True
+5.51,False,0.0028041283283120264,0,Tokyo,False,False,False
+1.59,False,0.0008083170229531533,0,London,True,True,False
+4.58,False,0.0023368896916632228,1,Sydney,True,False,False
+3.54,False,0.0018035000127365822,1,Sydney,True,False,False
+7.16,False,0.0036516080335376737,1,London,False,False,False
+1.42,False,0.0007231910039113429,1,New York,False,False,True
+2.32,False,0.0011806135119180898,2,Tokyo,False,False,True
+4.7,False,0.0024007273693135963,4,London,True,False,False
+1.26,False,0.0006425719196071132,4,New York,False,False,False
+6.06,False,0.0031262735953694,3,London,False,False,False
+2.39,False,0.0012349889419400178,3,London,False,False,False
+1.82,False,0.0009409429075135842,4,Tokyo,False,False,False
+3.92,False,0.0020413051855400605,3,London,False,False,False
+2.93,False,0.0015442509592275585,3,Tokyo,True,False,False
+2.73,False,0.001440253231337378,4,Tokyo,True,False,False
+1.13,False,0.0005975958665404487,0,Sydney,True,True,False
+3.57,False,0.001885765900915415,0,Sydney,True,True,False
+2.91,False,0.0015371450304259636,0,London,False,False,False
+5.06,False,0.0026628355514858727,1,Tokyo,True,True,False
+1.08,False,0.0005689420838030618,2,New York,True,False,True
+2.87,False,0.0015091918724496234,2,Sydney,True,False,False
+2.54,False,0.001321505684035275,3,Tokyo,False,False,False
+1.92,False,0.0010023492560689116,4,Tokyo,False,False,True
+2.67,False,0.0013921549202509007,4,Tokyo,True,False,False
+1.12,False,0.0005839842324257246,4,Tokyo,False,False,False
+2.82,False,0.00147429395957716,4,New York,False,False,True
+1.01,False,0.000527349052860216,0,Tokyo,False,False,False
+0.84,False,0.00043731778425655976,1,New York,True,False,True
+2.49,False,0.0012941922473206583,1,Sydney,True,False,False
+13.87,False,0.007169366593956436,1,London,True,True,False
+2.08,False,0.0010736980121100748,1,New York,False,False,False
+2.39,False,0.0012287980915068972,3,New York,True,False,True
+0.77,False,0.0003973783351395985,1,Sydney,False,False,False
+1.5,False,0.0007810344019619584,4,New York,False,False,False
+1.17,False,0.0006126745075039535,2,Sydney,False,False,False
+2.36,False,0.0012337675916438385,3,Sydney,True,False,False
+3.73,False,0.0019473942507491984,4,Sydney,True,False,True
+0.83,False,0.000431383962911374,0,Sydney,False,False,True
+2.01,False,0.0010408144243415941,0,London,True,True,True
+2.22,False,0.001148652144668081,1,Tokyo,False,False,True
+1.31,False,0.0006780433016050476,1,New York,False,False,False
+2.21,False,0.0011440048451969915,2,Tokyo,False,False,True
+3.9,False,0.0020045230263157896,2,London,False,False,False
+2.14,False,0.0011117980475995033,3,Tokyo,False,False,False
+2.04,False,0.0010649404886197537,1,Tokyo,False,False,False
+0.67,False,0.00035239973701512166,2,New York,True,False,False
+1.19,False,0.0006374749563410008,4,Sydney,True,False,False
+2.29,False,0.0012221937577387813,4,Tokyo,False,False,False
+4.49,False,0.002435016513642058,0,Tokyo,False,False,False
+2.5,False,0.0013704787904702386,1,Tokyo,False,False,True
+5.15,False,0.0028155461886251935,1,Tokyo,False,False,False
+3.13,False,0.001719232332553362,2,New York,False,False,True
+1.25,False,0.0006854686137631131,3,Sydney,True,False,False
+8.61,False,0.004706100987133377,4,London,True,False,False
+5.91,False,0.0031928514702783887,0,London,False,False,True
+5.37,False,0.0028834382181747893,0,New York,True,True,False
+4.66,False,0.002494406320590093,2,Tokyo,True,True,True
+4.64,False,0.002466209213204849,4,Tokyo,True,False,True
+8.2,False,0.004268543437635018,4,London,True,True,True
+0.58,False,0.0003020738935241607,0,New York,False,False,False
+2.48,False,0.0012870346824708989,1,London,False,False,False
+10.11,False,0.005219357569875375,2,Sydney,True,True,False
+2.35,False,0.0012109157614856648,2,Tokyo,False,False,True
+4.08,False,0.0020904316638913796,3,Tokyo,False,False,False
+2.66,False,0.0013635641310866993,3,Tokyo,False,False,True
+2.52,False,0.0012907786161009266,3,London,False,False,True
+4.78,False,0.002422952149229522,3,New York,True,True,True
+4.41,False,0.0022294796869628524,4,Sydney,False,False,False
+10.14,False,0.005125846093185254,0,New York,True,True,False
+4.8,False,0.0024349043539133477,0,Sydney,False,False,True
+3.63,False,0.0018335555824948479,0,Tokyo,True,True,False
+3.68,False,0.0018650192330108405,2,Tokyo,False,False,True
+6.15,False,0.003096863858843435,3,London,False,False,False
+2.36,False,0.0011865020311305956,4,Tokyo,False,False,False
+9.13,False,0.004571880680424039,4,New York,True,True,True
+12.93,False,0.006437095192341201,4,New York,True,True,False
+5.42,False,0.0027334668125860513,2,New York,False,False,True
+7.36,False,0.003741966973074107,1,London,False,False,False
+2.86,False,0.0014651189000338103,3,Sydney,True,False,False
+2.58,False,0.0013310495686986669,0,Sydney,False,False,True
+4.93,False,0.0025372220249399147,0,London,True,True,True
+2.87,False,0.0014571264653767458,2,Tokyo,True,False,True
+3.08,False,0.0015517623586787854,4,Sydney,True,False,False
+2.99,False,0.0015043343949204817,4,Tokyo,True,False,False
+5.7,False,0.0028744036873052216,0,Sydney,True,True,False
+3.94,False,0.0019832181489628374,1,Sydney,True,True,True
+3.64,False,0.0018301113652932452,1,Tokyo,False,False,True
+2.78,False,0.0013961710761566121,2,New York,False,False,False
+2.05,False,0.0010295144207349226,3,New York,True,False,True
+16.09,False,0.007972766733395437,0,Sydney,True,True,False
+3.15,False,0.0015660033109784288,0,Sydney,False,False,False
+5.66,False,0.0027616087590813503,2,Sydney,True,True,False
+2.14,False,0.0010470948012232415,3,Tokyo,False,False,False
+2.06,False,0.0010069804274289737,3,Tokyo,False,False,False
+7.48,False,0.003617581057030102,4,London,True,True,True
+0.64,False,0.00030892801977139327,4,New York,False,False,True
+3.5,True,0.001724273834390888,0,New York,False,False,True
+3.22,False,0.0015801974756099956,1,Sydney,False,False,False
+3.15,False,0.0015518770322199232,2,London,False,False,False
+2.0,False,0.0009993654029691146,4,New York,False,False,True
+3.03,False,0.0015264022246178955,1,Sydney,False,False,True
+1.97,False,0.0009932990132557518,2,Tokyo,True,False,False
+26.28,False,0.01308784493792238,2,New York,True,True,True
+8.39,False,0.004144499276318065,2,New York,True,True,True
+8.08,False,0.003960590167148669,3,Tokyo,True,True,False
+5.48,True,0.0026899006013007733,4,Sydney,False,False,False
+11.46,True,0.005635271092927883,0,London,True,True,False
+2.04,True,0.0010076910537781005,1,Sydney,False,False,True
+4.08,True,0.0019970338174182464,3,New York,False,False,True
+3.38,False,0.001642243557352198,1,Sydney,False,False,True
+1.06,True,0.0005102212723763315,2,New York,False,False,True
+4.53,True,0.002173704414587332,3,Sydney,True,False,True
+2.93,True,0.001415759871663542,4,Sydney,True,False,True
+8.24,True,0.00402493112678533,3,London,False,False,False
+5.64,True,0.0027531399952161746,4,New York,False,False,False
+8.22,True,0.0039966743002173375,4,London,True,True,False
+3.75,True,0.0018662565878857554,3,New York,True,False,False
+4.51,True,0.0022360162222729027,3,London,True,False,False
+1.55,True,0.0007668294323978015,3,New York,True,False,True
+3.54,True,0.0017463802076909795,4,Tokyo,True,False,True
+3.71,True,0.0018384630250893215,3,Tokyo,False,False,False
+3.22,True,0.001584825054016941,0,Tokyo,True,True,False
+6.37,True,0.003126441746095629,0,London,True,True,False
+2.54,True,0.0012442563363998863,3,New York,True,False,True
+8.49,True,0.004144779238024566,3,London,False,False,True
+2.84,True,0.001381524541518704,4,Tokyo,False,False,False
+1.7,True,0.0008343435434079498,4,New York,False,False,False
+2.51,True,0.0012305308931889378,4,New York,False,False,False
+6.73,True,0.0033254767093098526,0,London,False,False,False
+9.67,False,0.00481852065934504,4,London,False,False,False
+2.5,False,0.0012322737422181913,1,London,False,False,False
+5.37,False,0.0026342253072036497,4,London,True,True,False
+2.21,False,0.0010864168399526105,2,New York,False,False,True
+17.53,False,0.008556436851738866,3,London,True,True,False
+5.19,False,0.0025253508242667243,4,Tokyo,True,True,False
+17.06,False,0.008266465092840252,4,London,True,True,True
+8.75,False,0.004148020327669903,0,London,True,True,True
+6.75,False,0.0031820410318298383,1,Tokyo,True,True,False
+7.91,False,0.0037100443235383784,1,London,True,True,False
+4.83,False,0.0022648091792762926,2,Tokyo,True,False,True
+5.2,False,0.0024004727084718223,4,Tokyo,True,True,False
+7.76,False,0.0035638507958960603,4,London,False,False,False
+6.6,False,0.003026176426085641,4,London,False,False,False
+2.2,False,0.0010117082233483865,2,New York,False,False,True
+1.48,False,0.000684079889437899,3,New York,False,False,False
+5.27,False,0.0024294894845056656,4,Sydney,True,False,False
+1.33,False,0.0006162514305836781,4,New York,False,False,False
+2.47,False,0.0011431692168133814,0,Tokyo,True,True,False
+2.12,False,0.0009819269853915203,2,Tokyo,False,False,False
+7.8,False,0.003586173920239814,3,London,False,False,True
+5.73,False,0.002633223653976949,0,London,False,False,False
+7.46,False,0.0034131410505703055,1,Tokyo,True,True,True
+8.0,False,0.003647205784468374,2,London,False,False,False
+2.29,False,0.001044512659584658,2,New York,False,False,False
+8.19,False,0.0036976337852663516,3,London,False,False,True
+4.29,False,0.0019305974951735062,3,London,False,False,True
+2.9,False,0.001288093133575258,0,New York,False,False,False
+7.14,False,0.0031382546205744673,2,London,False,False,True
+10.35,False,0.004504935842749447,3,London,False,False,False
+4.72,False,0.00205747862968436,3,New York,False,False,False
+6.82,False,0.0029761255383863464,3,New York,False,False,False
+7.19,False,0.0031448604058138367,4,Tokyo,False,False,True
+11.54,False,0.004963355469153219,0,Sydney,False,False,True
+8.07,False,0.0034118582155178243,1,Tokyo,True,True,False
+6.98,False,0.0029739333463993252,1,London,False,False,True
+8.81,True,0.003684080673421512,4,Sydney,True,True,False
+8.19,True,0.0034192672998643145,4,Tokyo,False,False,False
+7.56,False,0.0032074399029282737,0,Tokyo,False,False,False
+17.01,False,0.007137013027880925,1,London,False,False,False
+9.23,False,0.003848751970244102,1,London,True,True,False
+6.35,False,0.002658149425672281,2,Tokyo,True,False,False
+5.18,False,0.0021722994082790607,3,London,False,False,False
+5.05,False,0.002122080563422895,4,Sydney,False,False,True
+8.83,False,0.003679657287638352,4,London,False,False,False
+20.06,False,0.008606930166303397,1,London,False,False,False
+4.09,False,0.0017787094136782317,3,Tokyo,False,False,False
+8.35,False,0.003617036023079722,3,New York,False,False,False
+12.77,False,0.005531059693864291,0,Sydney,True,True,False
+8.53,False,0.003680769811646422,2,Sydney,True,False,False
+6.7,False,0.0028584593330830406,3,New York,True,True,True
+4.83,False,0.0020437610280583424,2,Tokyo,True,False,True
+6.47,False,0.002731236992853193,2,Tokyo,True,True,False
+7.45,False,0.0031385071659069657,2,London,False,False,True
+5.9,False,0.002469259807983661,2,New York,True,True,False
+5.1,False,0.002136009348182088,4,Tokyo,False,False,True
+10.08,False,0.004114168166623811,0,Tokyo,True,True,False
+6.37,False,0.0026354658403081464,2,Tokyo,False,False,False
+6.34,False,0.0026252153173446403,2,London,False,False,False
+3.38,False,0.0014493561514019732,4,New York,True,False,False
+3.07,False,0.0013146681854581425,4,Sydney,True,False,True
+6.93,False,0.0029565350944555364,4,Tokyo,True,False,False
+6.07,False,0.0025885965286366157,4,London,True,False,False
+4.7,False,0.0020080407076848144,0,New York,True,True,False
+3.79,False,0.0016059594230410684,2,Sydney,False,False,False
+4.75,False,0.0020359440565435242,3,Tokyo,False,False,True
+5.99,False,0.00255040129436059,3,London,True,False,False
+4.31,False,0.0018355500474858072,3,London,False,False,False
+12.41,False,0.0052406430661773706,3,Sydney,True,True,False
+10.82,False,0.004555885387060781,3,London,False,False,False
+6.5,False,0.0028196752601692674,0,London,True,True,True
+6.09,False,0.0026219034416249776,4,Tokyo,True,False,True
+2.56,False,0.0011048340806787823,0,London,False,False,False
+4.68,False,0.0020013171061296748,3,Sydney,False,False,False
+3.71,False,0.0015713281322795693,3,New York,False,False,False
+2.28,False,0.000964813913632228,4,Sydney,True,False,False
+5.48,False,0.0023140621503042486,4,Tokyo,True,True,False
+8.97,False,0.0038639643326369303,2,Sydney,False,False,False
+5.26,False,0.0022698438727161313,2,Tokyo,False,False,False
+3.02,False,0.0012959426695560753,4,Tokyo,False,False,False
+0.75,False,0.00032153513735981066,1,Sydney,False,False,False
+2.34,False,0.0010024762019004206,1,Sydney,True,False,False
+6.72,False,0.0028829447221090116,1,Tokyo,False,False,False
+2.12,False,0.0008986782647031395,4,Sydney,True,False,True
+1.76,False,0.0007379485867865275,0,Sydney,False,False,False
+5.05,False,0.00214093726417894,0,London,False,False,False
+4.1,False,0.0017314554783673642,1,Sydney,True,False,False
+9.63,False,0.004076656379776737,1,London,False,False,False
+1.84,False,0.0007782364485348853,2,New York,False,False,True
+4.9,False,0.002060243192788308,2,London,True,False,True
+2.94,False,0.0012344590424124857,3,Sydney,True,False,False
+2.65,False,0.0010965683617268674,3,New York,False,False,False
+3.58,False,0.0014822052564463508,4,London,False,False,False
+4.02,False,0.0016665975705816506,0,Tokyo,False,False,False
+4.33,False,0.0017822450525206625,1,Sydney,False,False,True
+8.84,False,0.003572713200851955,2,Tokyo,False,False,False
+5.6,False,0.0022709761141976557,3,Sydney,True,False,True
+5.22,False,0.0021811708959932475,0,London,False,False,True
+3.5,False,0.001452354474081697,1,New York,False,False,False
+7.19,False,0.002973925416101387,2,London,False,False,True
+8.87,False,0.0037364988963216332,4,Sydney,True,False,False
+9.37,False,0.00391225198744071,1,London,True,False,False
+10.56,False,0.004399670024748144,1,London,True,False,True
+11.06,False,0.004573668735707285,2,Sydney,True,True,False
+3.31,False,0.001353406823460142,3,Sydney,False,False,False
+3.51,False,0.001428164544085934,4,Sydney,False,False,True
+9.15,False,0.0037093792566647212,4,Tokyo,True,True,False
+10.4,True,0.004338087153839416,0,London,False,False,True
+3.58,False,0.0014918531483102055,3,Tokyo,False,False,True
+4.61,False,0.0018935348722582768,4,London,False,False,False
+3.32,False,0.0013643405755709066,0,Sydney,True,True,False
+4.22,False,0.0017239055038338516,2,New York,False,False,False
+1.79,False,0.0007307912141749,3,Sydney,True,False,True
+19.62,False,0.007872341279235397,4,London,True,True,False
+10.26,False,0.004079312003753285,1,Tokyo,True,True,True
+9.71,False,0.0038546430386178867,2,New York,False,False,False
+1.96,False,0.0007879396984924623,4,Sydney,True,False,True
+3.89,False,0.001542628496194982,0,Tokyo,True,True,True
+5.89,False,0.0023311038112953657,0,London,True,True,False
+5.79,False,0.0022972908632100174,0,London,False,False,False
+10.52,False,0.004190450393750971,2,London,False,False,False
+3.14,False,0.0012522382762182403,3,New York,True,False,True
+7.16,False,0.002834554646333884,4,Tokyo,True,False,False
+6.67,False,0.0026451878995542443,4,London,False,False,False
+4.03,False,0.001609090763898871,1,Tokyo,True,False,False
+5.04,False,0.002020922968350903,1,New York,False,False,False
+2.6,False,0.0010409493458033727,4,New York,False,False,False
+4.64,False,0.001856408409850167,0,London,False,False,True
+3.96,False,0.0015802516431025608,1,Tokyo,False,False,False
+7.41,False,0.00294756438101148,1,London,True,True,False
+5.33,False,0.002064003469694388,4,London,False,False,False
+3.47,False,0.001343778923195483,0,Sydney,True,True,True
+3.31,False,0.0012805880646097301,0,Sydney,True,True,True
+2.97,False,0.0011499816080382554,1,Sydney,False,False,False
+3.68,False,0.0014229591363256722,1,Sydney,True,False,False
+3.71,False,0.0014382799567352984,1,Tokyo,False,False,False
+6.01,False,0.0023246998390889957,1,Tokyo,False,False,False
+1.16,False,0.0004512354515466484,2,New York,True,False,True
+2.76,False,0.001072515242539996,2,Sydney,True,False,False
+6.14,False,0.0023972108022847684,3,Sydney,False,False,True
+4.86,False,0.0018919928991871441,3,Tokyo,True,False,True
+4.54,False,0.0017531191232859785,3,London,False,False,False
+5.43,False,0.0020887507501038604,4,Tokyo,True,False,True
+11.74,False,0.0044758252064445786,4,London,True,True,False
+6.05,False,0.002299671964147924,0,Sydney,True,True,False
+3.44,False,0.0013069263296265762,1,Sydney,True,False,False
+2.76,False,0.001037266427143308,2,Sydney,True,False,False
+5.45,False,0.0020449974484435507,2,Sydney,True,True,False
+7.51,False,0.0028227140150945667,2,New York,False,False,False
+8.12,False,0.003052597151159949,4,New York,False,False,False
+5.14,False,0.0019354668654850526,0,Tokyo,False,False,False
+2.27,False,0.0008599527215420052,1,Sydney,True,False,False
+2.96,False,0.0011147054503824268,2,Tokyo,False,False,False
+8.89,False,0.0033445948487972254,2,London,False,False,False
+6.19,False,0.002360802291389365,2,Tokyo,False,False,False
+5.29,False,0.002017944062132841,2,Tokyo,False,False,False
+4.59,False,0.0017548420642142207,3,Sydney,True,False,False
+5.03,False,0.0019118060676087602,3,New York,True,False,True
+5.53,False,0.0020800499512899696,4,London,True,False,False
+7.9,False,0.0029749352292583,0,Sydney,False,False,True
+1.88,False,0.0007093402758126285,0,New York,False,False,False
+3.62,False,0.001368552774343794,1,Tokyo,False,False,True
+1.8,False,0.0006726683632857608,3,Sydney,True,False,True
+2.22,False,0.0008289830394551117,3,Sydney,True,False,False
+7.12,False,0.0026371054064364633,4,Sydney,True,True,True
+6.33,False,0.002333588934438317,4,Tokyo,False,False,False
+4.73,False,0.0017424747562193087,4,London,True,True,False
+3.85,False,0.0014089764609439045,1,Sydney,True,False,True
+5.87,False,0.002137981774342762,1,London,True,True,False
+10.5,False,0.0038566501504093556,2,London,False,False,False
+3.12,False,0.001144546711812676,3,Sydney,False,False,True
+5.42,False,0.0019834589767986533,4,Tokyo,False,False,False
+4.9,False,0.0017997039670617446,4,Tokyo,False,False,True
+2.5,False,0.0009107634018834588,4,New York,False,False,False
+3.78,False,0.001380443714050945,0,New York,True,True,False
+3.86,False,0.0013861706139012082,2,Tokyo,False,False,False
+3.83,False,0.0013771182631770083,3,Tokyo,False,False,False
+3.32,False,0.0012049898192878219,4,Sydney,True,False,False
+3.05,False,0.0011127691168261635,1,Tokyo,False,False,False
+7.61,False,0.002845827926509579,3,London,True,False,True
+8.04,False,0.003069627864890558,0,New York,False,False,False
+2.87,False,0.0010945174970253533,1,New York,True,False,False
+9.19,False,0.003522908488714426,2,Sydney,True,False,False
+17.39,False,0.006704061373580833,0,Sydney,True,True,False
+3.76,False,0.0014354651517928042,1,Sydney,True,True,True
+4.9,False,0.0018429228003400005,3,Sydney,True,True,False
+26.48,True,0.009741812536329457,0,New York,True,True,False
+8.56,True,0.003196355557215138,0,Tokyo,False,False,False
+4.17,False,0.0015742502491619098,3,Tokyo,False,False,False
+4.71,False,0.0017911196969927444,3,New York,False,False,False
+19.56,False,0.007379767514685964,0,Sydney,True,True,False
+4.41,False,0.0016687857596948508,0,Tokyo,False,False,True
+9.92,False,0.003720567386526445,0,London,True,True,True
+5.41,False,0.0020296836544810614,1,Sydney,True,False,True
+3.4,False,0.0012711468361529114,1,Tokyo,False,False,True
+5.1,False,0.0019003897662147962,3,London,False,False,False
+4.81,False,0.0017911270322402864,4,Sydney,True,False,True
+3.53,False,0.0013358410311330427,1,Tokyo,False,False,False
+3.15,False,0.0011885402085039108,2,Sydney,True,False,False
+5.65,False,0.0021401271955242933,2,London,False,False,False
+5.58,False,0.0021514746083583633,3,Sydney,True,False,True
+7.33,False,0.0028194042710320633,3,New York,False,False,False
+2.83,False,0.0010819283556982836,1,New York,True,False,True
+6.52,False,0.0024738387755256904,3,New York,False,False,False
+3.52,False,0.001339809077206498,4,Tokyo,False,False,False
+5.95,False,0.002276109268546465,1,Tokyo,True,False,False
+4.41,False,0.0016683438377204597,0,Sydney,True,True,False
+2.18,False,0.0008272742452071222,1,Sydney,False,False,True
+8.37,False,0.0031459305865638317,2,New York,False,False,False
+2.74,False,0.0010296842176466831,3,Tokyo,False,False,True
+6.45,False,0.002418483966763656,3,Tokyo,True,False,False
+2.81,False,0.0010507108189561692,4,Sydney,False,False,True
+2.61,False,0.0009698167752291702,0,New York,False,False,False
+3.22,False,0.0012048373095459037,1,New York,False,False,True
+4.17,False,0.0015563301957915636,2,Sydney,True,False,True
+4.58,False,0.0016870674127089957,4,Sydney,False,False,False
+3.7,False,0.0013697970849237172,0,Sydney,False,False,True
+9.27,False,0.003356142065819485,2,Tokyo,True,True,False
+3.46,False,0.0012566601170219335,3,Sydney,False,False,False
+2.62,False,0.0009441917790447086,4,Sydney,False,False,False
+2.59,False,0.0009448209947250533,1,Sydney,False,False,False
+5.12,False,0.001852106409301047,2,Tokyo,False,False,False
+7.76,False,0.002785345350519201,3,London,True,True,True
+4.67,False,0.0016703029435959798,3,London,False,False,False
+8.11,False,0.0028960355380341237,4,Tokyo,True,True,False
+6.09,False,0.002170457542429059,4,London,True,True,True
+16.46,False,0.0058154324477105715,0,London,True,True,False
+13.83,False,0.004877842321895269,1,London,True,True,False
+6.62,False,0.0023112507637252336,2,Tokyo,True,True,True
+9.95,False,0.0034509069469011197,4,London,True,True,False
+3.95,False,0.0013605301589925877,0,Tokyo,True,True,False
+4.83,False,0.0016610781532112459,0,New York,False,False,True
+5.57,False,0.0018949380998227537,2,Tokyo,False,False,False
+8.37,False,0.002840639126834367,2,Tokyo,True,True,False
+4.48,False,0.0015292033464976806,4,Tokyo,False,False,True
+9.63,False,0.0032744966693982478,0,Sydney,True,True,False
+5.68,False,0.0019300952134997924,1,London,False,False,False
+4.6,False,0.0015758821514217196,2,New York,True,False,False
+9.66,False,0.00336729678573047,0,Tokyo,False,False,False
+5.37,False,0.0018442264036898266,4,Sydney,False,False,True
+5.58,False,0.0019127668618283036,4,Tokyo,True,False,True
+16.54,False,0.005677313058849777,0,Tokyo,False,False,False
+10.18,False,0.003464824206119601,2,London,True,True,False
+18.56,False,0.006246823577720111,3,London,True,True,False
+5.0,False,0.001672744304305644,3,New York,True,True,False
+3.68,False,0.001231997107485052,4,Tokyo,False,False,True
+4.05,False,0.001350630294137264,0,London,False,False,False
+2.44,False,0.0008096440552548885,1,Sydney,False,False,False
+6.47,False,0.0021223413328434783,2,New York,False,False,True
+8.56,False,0.002815011641520106,3,London,False,False,False
+6.28,False,0.0020645127355451236,3,London,False,False,False
+5.99,False,0.001983778717598005,4,New York,False,False,True
+3.28,False,0.0010849251633176216,4,New York,False,False,False
+9.51,False,0.003135530072733747,0,Tokyo,True,True,False
+7.38,False,0.0024452632136987753,1,Tokyo,False,False,True
+7.28,False,0.0024062536151646867,2,Sydney,True,False,False
+4.51,False,0.0014880805081250515,2,Tokyo,True,False,False
+4.27,False,0.0014103533810497387,3,Sydney,False,False,True
+13.48,False,0.0044148953591196406,3,Tokyo,True,True,False
+10.58,False,0.00346763594411141,3,London,False,False,False
+8.28,False,0.0026935325940215284,4,Sydney,True,True,True
+9.03,False,0.00290629375130751,0,Sydney,True,True,True
+14.67,True,0.0046424197544928944,3,Sydney,True,True,False
+39.41,True,0.012604544800345415,3,London,False,False,False
+16.42,True,0.005284874701478607,4,Tokyo,False,False,False
+12.09,False,0.004019615992020613,1,Tokyo,False,False,True
+21.26,True,0.007063615733988086,2,Sydney,True,False,True
+14.17,True,0.00462832916337316,2,London,False,False,True
+10.71,True,0.0033947516062468506,3,London,True,True,True
+16.15,True,0.005093448217135432,3,London,True,True,False
+10.66,True,0.003267643281253353,2,Sydney,True,True,True
+17.5,True,0.005123445766130803,0,London,True,True,False
+8.69,True,0.0025387903204601957,0,New York,False,False,True
+16.97,True,0.004863732377210103,1,Sydney,True,True,False
+17.78,True,0.005331909891322602,2,Tokyo,False,False,False
+13.8,True,0.00418630894960048,2,New York,False,False,True
+23.07,True,0.006965790029892207,3,New York,True,False,True
+30.14,True,0.008967595857173036,3,Sydney,True,False,False
+12.76,True,0.003817730305478263,3,London,False,False,False
+12.84,True,0.0038852342941521774,4,Tokyo,False,False,False
+7.39,True,0.0022426219558455353,4,New York,False,False,True
+7.75,False,0.002334386568391502,1,London,False,False,True
+6.52,False,0.0019672625782605415,2,Tokyo,False,False,False
+10.77,True,0.0033442739013113155,3,London,False,False,True
+19.75,True,0.006046541531321085,0,Sydney,True,True,False
+19.84,True,0.006008388728214291,0,Tokyo,True,True,True
+13.52,True,0.004052344785003926,0,New York,True,True,False
+9.62,True,0.0028435122401083016,1,Tokyo,False,False,False
+17.0,True,0.005011393550631288,1,London,True,True,True
+9.9,True,0.0029077793377312276,1,London,True,True,True
+21.59,True,0.006367078752418251,2,Tokyo,False,False,False
+23.15,True,0.006789513354664821,3,Sydney,True,False,False
+9.29,False,0.002794850735716628,4,New York,True,False,False
+12.84,False,0.0038638504292665605,4,Sydney,False,False,False
+28.59,False,0.008641247676474588,4,Sydney,False,False,False
+7.34,False,0.002204899442767239,4,Tokyo,False,False,True
+9.86,True,0.0030443562082018536,0,New York,False,False,False
+15.05,False,0.004625929796520563,1,Sydney,True,False,False
+7.26,True,0.0022773755599332472,3,Sydney,True,False,False
+12.08,True,0.003755413173168692,3,London,True,False,True
+3.89,True,0.0012070886201642757,3,London,True,False,False
+13.72,True,0.004240024970409447,1,Tokyo,True,False,True
+24.86,True,0.007622189585869208,1,London,True,True,True
+8.43,False,0.002551298347557654,2,Sydney,True,True,False
+10.5,False,0.003158046702999242,2,New York,True,True,False
+8.5,False,0.002548824991678836,0,London,False,False,True
+17.42,True,0.005279747832939323,3,Tokyo,True,False,True
+11.09,False,0.0033584688531540534,4,Tokyo,False,False,False
+5.05,True,0.0015238934421282603,0,Sydney,False,False,True
+14.2,True,0.004254069826661633,0,Tokyo,True,True,True
+13.98,False,0.004126242964283501,3,Tokyo,True,False,False
+4.22,False,0.0012556422074309025,4,Tokyo,False,False,False
+10.27,False,0.0030834729453021324,0,London,True,True,False
+10.6,False,0.0031812247715370416,1,New York,False,False,False
+21.93,False,0.006554564583233704,2,New York,False,False,True
+13.5,False,0.004017713653083819,3,Tokyo,False,False,True
+13.14,False,0.0038690073081249156,4,Sydney,True,False,True
+6.15,False,0.0017940804098088064,4,London,False,False,False
+8.18,False,0.002402257769894248,0,London,False,False,False
+6.62,False,0.0019519559365113064,2,Sydney,False,False,False
+5.82,False,0.001718943824206982,2,London,False,False,False
+9.56,False,0.0028156652303632386,2,London,False,False,False
+9.26,False,0.0027485003457886504,0,London,False,False,True
+6.76,False,0.002027095915221811,2,Sydney,True,False,False
+5.92,False,0.0017750592186141344,2,London,False,False,False
+6.04,False,0.0018051836266258607,3,Tokyo,True,False,False
+18.55,False,0.005665090824690635,4,London,False,False,False
+8.2,False,0.0024952149688554567,0,Sydney,True,True,True
+5.07,False,0.0015375517445298643,0,London,True,True,False
+3.94,False,0.0011886158357417385,1,Sydney,True,True,True
+7.17,False,0.002153101426992745,1,Tokyo,True,True,True
+8.03,False,0.0024050557086378334,1,Tokyo,True,True,True
+6.3,False,0.001886577747965191,2,Tokyo,False,False,True
+6.12,False,0.0018305102996114652,4,Tokyo,True,False,False
+6.82,False,0.0020526650032656035,3,Sydney,False,False,True
+7.78,False,0.0023278846470322465,4,Tokyo,False,False,False
+6.15,False,0.001841295313828577,4,Tokyo,False,False,True
+6.36,False,0.001900833856361517,4,Tokyo,True,True,True
+7.0,False,0.0021002226235981012,2,Sydney,False,False,True
+5.83,False,0.001750015008705049,3,Tokyo,False,False,False
+3.62,False,0.0010874463035837664,3,Tokyo,False,False,False
+11.88,False,0.0035673640242748915,3,London,False,False,False
+6.46,False,0.0019235063794309877,0,Sydney,True,True,False
+9.63,False,0.002831769929720352,1,London,False,False,True
+5.15,False,0.0015023074275246058,2,Sydney,False,False,False
+4.83,False,0.0014086766314254466,2,Tokyo,False,False,False
+6.55,False,0.001959194905495018,0,Sydney,True,True,False
+6.77,False,0.002066418411574385,2,New York,False,False,True
+6.14,False,0.0018686980896062038,3,Sydney,True,False,True
+44.36,True,0.01326071229993842,4,London,True,True,False
+3.41,True,0.0010175702451717635,4,New York,False,False,True
+3.08,True,0.0009157264118687658,4,New York,True,True,False
+6.04,False,0.0017965496728138013,0,Sydney,False,False,False
+8.88,False,0.0026407743892465766,0,Tokyo,False,False,False
+10.42,False,0.0030936956302291476,0,London,True,True,True
+4.6,False,0.0013612206005942022,1,Sydney,True,False,False
+4.93,False,0.0014611433669129566,1,Tokyo,False,False,False
+8.39,False,0.002486176385176581,1,Tokyo,False,False,False
+4.81,False,0.001422050354182188,3,Sydney,True,False,False
+7.91,False,0.0023347934401454595,3,Tokyo,True,False,False
+10.87,False,0.0031963631444920813,3,New York,True,True,False
+9.47,False,0.0028135454237549987,2,London,False,False,False
+10.69,False,0.0031689190991850925,3,Sydney,True,False,False
+3.54,False,0.0010577015010995315,0,Sydney,False,False,True
+5.88,False,0.001753826055054628,0,Sydney,True,True,False
+2.16,False,0.000645028354371411,0,London,False,False,False
+6.18,False,0.0018512416499415869,2,London,True,False,True
+5.97,False,0.0017931912797438468,4,London,False,False,True
+32.42,False,0.009626776811404851,4,London,True,True,False
+3.41,False,0.0010106907967859442,4,New York,False,False,False
+7.48,False,0.002218741842860872,0,London,False,False,False
+2.8,False,0.0008270321361058601,1,New York,False,False,True
+7.16,False,0.0021173471650909777,2,Tokyo,False,False,False
+1.68,False,0.0004944987019409073,2,New York,False,False,False
+5.96,False,0.001755135095339763,3,Tokyo,False,False,True
+5.71,False,0.0016788932829567339,3,Tokyo,True,True,False
+8.71,False,0.0025491240495659757,4,London,False,False,True
+11.53,False,0.0033624375193201635,4,London,True,True,True
+4.05,False,0.001174124045480637,4,London,True,True,False
+19.18,False,0.005504029018113364,0,Sydney,True,True,False
+9.33,False,0.002676251068492522,0,Tokyo,True,True,False
+9.5,False,0.0027310936448888302,0,London,False,False,False
+5.84,False,0.0016752917417296813,1,Tokyo,False,False,False
+11.34,False,0.0032492836676217764,1,London,False,False,False
+7.3,False,0.002061500489959363,2,Tokyo,False,False,False
+11.77,False,0.003305028585548854,2,London,True,True,True
+9.05,False,0.002546956879035027,3,London,False,False,False
+6.02,False,0.001648515651314294,1,Sydney,False,False,False
+15.33,False,0.004186534270592669,1,London,True,True,False
+11.66,False,0.0032069177010305592,2,New York,True,False,False
+10.23,False,0.002798147697340529,2,Tokyo,True,False,False
+5.25,False,0.0014393341229109093,2,New York,False,False,False
+12.93,False,0.0035415051807865814,0,London,True,True,True
+7.14,False,0.0019383264695582297,1,Sydney,True,False,False
+9.94,False,0.0026907043473553137,1,Tokyo,True,True,False
+4.07,False,0.0011018940665576506,1,New York,False,False,False
+9.47,False,0.0025738171855974952,2,London,False,False,True
+9.71,False,0.0026443715192200332,3,Sydney,True,False,False
+6.75,False,0.0018013450042698549,0,New York,True,True,False
+6.55,False,0.0017421973497321538,1,Tokyo,True,True,True
+16.01,False,0.004240846156087509,1,Tokyo,True,True,True
+3.62,False,0.000960645383860096,2,Sydney,False,False,True
+8.26,False,0.002205442583732057,3,New York,True,False,False
+8.32,False,0.0022189211029531386,4,Sydney,False,False,False
+2.95,False,0.0007871452509792622,4,Sydney,False,False,False
+6.95,False,0.0018526169880979356,4,London,False,False,True
+10.37,False,0.0027379899404612602,0,Sydney,True,True,False
+8.4,False,0.002199246496259972,0,Tokyo,False,False,False
+3.66,True,0.0009464211832850642,1,Sydney,False,False,False
+12.51,False,0.003231272310243469,2,Tokyo,False,False,True
+9.29,True,0.0023858502898204577,3,London,True,False,False
+15.9,True,0.004057902957420092,0,Sydney,False,False,True
+6.89,True,0.0017407297927546227,0,New York,False,False,True
+7.84,False,0.001977136833504399,1,Sydney,False,False,False
+14.97,False,0.0037612876317204436,1,London,True,True,False
+7.98,False,0.001989241146879783,2,Sydney,True,True,True
+11.8,True,0.0029218335248207285,3,Sydney,False,False,False
+13.76,True,0.0033944046594124424,3,London,True,False,False
+11.08,True,0.0027128537360501044,0,London,False,False,True
+14.4,True,0.003461904624527594,1,Sydney,True,True,False
+19.61,True,0.004731708964911518,1,Tokyo,False,False,False
+24.55,True,0.005863694772593736,2,Sydney,True,True,False
+11.81,True,0.002789337691722682,3,Tokyo,False,False,True
+18.81,True,0.0042973658358273735,4,Sydney,False,False,False
+30.41,True,0.0071541326231741205,0,Sydney,False,False,False
+7.94,True,0.0018180902267346275,0,New York,True,True,False
+22.07,True,0.005080255140679561,1,Tokyo,False,False,False
+19.6,True,0.004844542104261467,2,London,False,False,False
+28.83,True,0.0070224240150825006,2,New York,False,False,False
+21.92,True,0.005332801350716839,3,Tokyo,False,False,True
+18.46,True,0.004474142799320396,3,New York,False,False,False
+20.86,True,0.005302935935144534,1,London,False,False,True

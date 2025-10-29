@@ -2,7 +2,7 @@ import pandas as pd
 
 # --- Timeframes and file paths ---
 timeframes = ["M15", "M30", "H1", "H4", "D1"]
-symbol = "XAUUSD"
+symbol = input("Enter symbol: ")
 files = {tf: f"{symbol}_{tf}.csv" for tf in timeframes}
 
 # --- Load all datasets ---
