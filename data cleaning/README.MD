@@ -10,7 +10,7 @@ Cleaning Steps
  	    IQR filtering is applied to both  and 
  	    Any row with values outside the IQR bounds is flagged as a noisy day
 	    The corresponding dates are saved in a set for downstream filtering
-    oisy Day Flagging in Intra-Day Timeframes
+    Noisy Day Flagging in Intra-Day Timeframes
         For the 15-minute, 30-minute, 1-hour, and 4-hour datasets:
  	    Rows before 2023 are removed
  	    The  column is split into separate  and  columns
