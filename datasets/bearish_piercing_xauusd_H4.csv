@@ -1,4 +1,7 @@
 candle_size,noisy_day,day_of_week,session,highest_of_day,highest_of_week,total_volume,success
+1.48,False,0,Sydney,True,True,18591,True
+2.11,False,1,New York,True,False,10709,False
+0.48,False,0,New York,True,True,28342,True
 2.47,False,0,New York,True,True,15124,False
 11.03,True,0,New York,True,True,58679,False
 6.73,False,0,New York,True,True,16016,False

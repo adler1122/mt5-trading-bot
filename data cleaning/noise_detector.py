@@ -10,7 +10,6 @@ datasets = {}
 for tf in timeframes:
     df = pd.read_csv(files[tf])
     df['time'] = pd.to_datetime(df['time'])  # Convert to datetime
-    df = df[df['time'] >= "2023-01-01"]      # Filter by date
     df.drop(columns=["spread", "real_volume"], inplace=True)
     datasets[tf] = df
 

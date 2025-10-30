@@ -1,4 +1,103 @@
 noisy_day,highest_of_day,highest_of_week,total_volume,session,day_of_week,maximum_movement
+False,True,False,5343,London,2,4.01
+False,False,False,2241,New York,4,0.92
+False,False,False,536,New York,1,22.76
+False,False,False,2210,Sydney,0,8.39
+False,False,False,5860,London,4,5.77
+False,False,False,2448,Tokyo,0,3.88
+False,False,False,3349,New York,0,3.31
+False,False,False,1135,New York,0,1.07
+False,False,False,3297,Sydney,3,1.44
+False,False,False,2997,New York,2,5.55
+False,True,False,6675,London,3,7.98
+False,False,False,2256,Sydney,4,3.67
+False,True,True,1000,New York,0,2.59
+False,True,True,9565,London,3,8.34
+False,True,True,1044,New York,4,2.38
+False,False,False,3202,Tokyo,2,3.46
+False,False,False,2890,London,3,10.49
+False,False,False,2046,New York,4,13.22
+False,True,False,6172,Sydney,1,5.83
+False,True,False,2673,Sydney,4,4.01
+False,False,False,1943,Sydney,4,0.8
+False,False,False,3604,New York,3,1.93
+False,True,False,6676,London,2,2.88
+False,False,False,2366,London,0,3.45
+False,False,False,2440,Sydney,0,48.46
+False,False,False,2936,Tokyo,4,3.34
+False,False,False,3431,Sydney,0,3.09
+False,False,False,1106,New York,3,3.18
+False,False,False,5859,London,1,3.55
+False,True,False,2324,New York,4,3.33
+False,False,False,1945,Sydney,4,1.03
+False,False,False,2971,Tokyo,2,5.25
+False,False,False,1331,New York,4,6.01
+False,False,False,2803,Sydney,0,4.71
+False,False,False,2798,Sydney,4,4.27
+False,False,False,5978,New York,1,15.8
+False,True,False,4031,Tokyo,3,6.49
+False,False,False,1772,Sydney,1,2.05
+False,False,False,4291,Tokyo,1,2.77
+False,False,False,1501,New York,2,3.45
+False,False,False,2094,New York,0,5.0
+False,True,False,2868,Tokyo,2,6.43
+False,False,False,2311,Sydney,3,5.08
+False,False,False,1881,New York,3,1.74
+False,False,False,2905,Sydney,0,308.22
+False,True,False,4410,Tokyo,1,8.98
+False,True,False,3265,Sydney,1,16.41
+False,False,False,3719,New York,1,9.86
+False,True,False,1943,Sydney,1,2.17
+False,False,False,3907,Tokyo,4,36.14
+False,False,False,4756,Tokyo,0,21.08
+False,False,False,1378,New York,2,1.91
+False,False,False,2457,Sydney,4,1.48
+False,False,False,1524,New York,1,1.57
+False,True,False,2249,New York,3,241.66
+False,False,False,1232,New York,4,5.91
+False,False,False,4176,London,0,3.33
+False,False,False,3649,Sydney,1,11.47
+False,False,False,1026,New York,1,2.32
+False,False,False,1617,New York,0,1.11
+False,True,False,1364,New York,1,4.37
+False,False,False,1347,New York,4,7.43
+False,False,False,3982,New York,1,3.07
+False,False,False,4676,Tokyo,4,10.63
+False,False,False,1895,New York,4,7.63
+False,False,False,1565,New York,0,1.08
+False,False,False,1224,New York,4,4.6
+False,True,False,4858,Tokyo,0,5.2
+False,False,False,1270,New York,0,0.99
+False,True,True,1225,New York,0,1.97
+False,False,False,12509,London,2,158.59
+False,False,False,3410,Sydney,4,7.76
+False,False,False,5143,Tokyo,4,6.24
+False,False,False,1302,New York,4,2.38
+False,False,False,1182,New York,0,1.59
+False,False,False,1177,New York,1,1.95
+False,False,False,1217,New York,4,5.07
+False,False,False,2020,Sydney,3,1.92
+False,False,False,4661,Tokyo,3,6.44
+False,True,False,12443,London,3,67.11
+False,False,False,5755,New York,3,1.55
+False,False,False,1784,New York,1,8.83
+False,True,False,2891,Sydney,3,2.19
+False,False,False,2584,Tokyo,0,3.46
+False,False,False,5878,London,0,20.14
+False,False,False,7522,London,2,4.58
+False,False,False,1839,New York,4,13.89
+False,False,False,3322,Sydney,0,2.52
+False,False,False,1627,New York,0,2.82
+False,False,False,2066,New York,2,3.21
+False,False,False,7698,Tokyo,2,56.27
+False,False,False,1691,New York,1,1.18
+False,False,False,1515,New York,4,4.11
+False,False,False,1321,New York,4,19.83
+False,False,False,4793,Sydney,3,29.12
+False,False,False,4642,Tokyo,3,21.76
+False,False,False,4182,London,0,1.92
+False,True,False,1064,New York,2,4.72
+False,False,False,8944,London,2,8.49
 False,False,False,1799,New York,1,3.29
 False,False,False,9748,London,0,8.45
 False,False,False,5954,Tokyo,0,6.33
@@ -9,7 +108,7 @@ False,False,False,1617,New York,0,2.15
 False,False,False,1313,New York,4,5.25
 False,False,False,1895,Sydney,3,2.32
 False,False,False,6206,Tokyo,1,4.43
-False,True,True,4730,New York,4,20.08
+True,True,True,4730,New York,4,20.08
 False,True,False,5326,Sydney,2,9.66
 False,True,False,10242,London,1,4.52
 False,False,False,1953,New York,3,25.6
@@ -21,7 +120,7 @@ False,True,True,1938,Sydney,0,8.22
 False,False,False,3226,Sydney,0,1.07
 False,False,False,2680,New York,0,1.27
 False,True,False,1237,Sydney,1,1.96
-False,False,False,4202,New York,3,2.7
+True,False,False,4202,New York,3,2.7
 False,False,False,7824,Tokyo,4,11.11
 False,True,False,1110,Sydney,2,1.09
 False,True,False,1364,New York,4,5.45
@@ -95,7 +194,7 @@ False,False,False,1187,New York,0,2.44
 False,True,False,3881,Tokyo,1,4.37
 False,True,True,5551,London,1,13.34
 True,False,False,5605,London,2,51.81
-False,False,False,4631,Sydney,0,3.96
+True,False,False,4631,Sydney,0,3.96
 False,False,False,3669,Tokyo,2,5.18
 True,False,False,3592,Sydney,0,15.02
 False,False,False,1022,New York,1,2.36
@@ -119,14 +218,14 @@ False,False,False,4783,Tokyo,1,7.23
 False,False,False,4048,London,3,4.31
 False,False,False,4813,Tokyo,4,33.11
 False,True,True,5252,London,1,8.38
-False,False,False,2016,New York,4,27.29
-False,False,False,3992,New York,3,8.35
+True,False,False,2016,New York,4,27.29
+True,False,False,3992,New York,3,8.35
 True,True,True,2538,New York,1,5.47
 True,False,False,2450,New York,1,68.04
 True,False,False,4486,Tokyo,4,53.95
 True,True,True,4453,New York,0,150.15
 False,False,False,3662,Tokyo,1,19.8
-False,False,False,2050,New York,4,206.37
+True,False,False,2050,New York,4,206.37
 True,False,False,5432,Tokyo,0,23.65
 True,True,True,4743,London,1,9.92
 False,True,True,4862,Tokyo,2,29.07
@@ -138,7 +237,7 @@ False,True,False,1850,Sydney,1,24.83
 False,False,False,3827,Tokyo,0,12.1
 False,False,False,3897,Sydney,2,5.88
 False,False,False,3814,Tokyo,4,5.84
-False,False,False,4327,Sydney,1,7.7
+True,False,False,4327,Sydney,1,7.7
 False,False,False,3279,Tokyo,0,14.5
 False,True,False,4278,London,2,12.75
 False,True,False,3034,Tokyo,4,7.86
@@ -152,7 +251,7 @@ False,False,False,1924,Sydney,1,3.63
 False,False,False,3510,Tokyo,0,65.78
 False,False,False,2202,Tokyo,3,14.37
 False,True,True,1584,New York,1,4.2
-False,False,False,4834,Tokyo,1,3.28
+True,False,False,4834,Tokyo,1,3.28
 False,False,False,4699,Tokyo,2,4.93
 False,True,True,4771,New York,2,63.36
 False,False,False,4423,Tokyo,1,9.09
@@ -161,7 +260,7 @@ False,True,True,3073,New York,0,5.56
 False,False,False,5189,London,0,1.36
 False,True,False,2722,New York,3,5.77
 False,False,False,4788,London,3,32.3
-False,True,True,2674,New York,0,8.16
+True,True,True,2674,New York,0,8.16
 False,True,True,2992,New York,1,14.36
 True,True,True,6053,New York,4,25.75
 True,True,True,5561,London,0,20.83

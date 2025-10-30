@@ -6,6 +6,6 @@ We work with five timeframes:
 1-hour
 4-hour
 1-day
-The dataset includes key features such as open, high, low, close, volume, and timestamp. For each timeframe, data is collected from January 1, 2023, up to the current date.
+The dataset includes key features such as open, high, low, close, volume, and timestamp. For each timeframe, data is collected from August 10, 2021, up to the current date.
 The data is saved in separate CSV files for each timeframe, making it easy to use in downstream tasks such as pattern detection, feature engineering, and model training.
 To run the extraction script, make sure MetaTrader 5 is installed and running, and that you're logged into the demo account. The script uses the MetaTrader5 Python package to connect and pull data

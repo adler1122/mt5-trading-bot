@@ -1,6 +1,16 @@
 noisy_day,highest_of_day,highest_of_week,total_volume,session,day_of_week,maximum_movement
+False,False,False,536,New York,1,22.76
+False,False,False,539,New York,0,0.91
+False,False,False,1019,New York,3,6.52
+False,False,False,1266,New York,4,3.23
+False,False,False,2248,Tokyo,1,35.21
+False,False,False,5137,New York,2,3.38
+False,False,False,693,New York,3,2.17
+False,False,False,1552,New York,3,2.68
+False,True,False,2679,Sydney,3,1.37
+False,False,False,2020,Sydney,3,1.92
 False,False,False,3980,New York,3,2.17
-False,True,True,6313,New York,4,1.47
+False,True,False,6313,New York,4,1.47
 False,False,False,877,New York,4,3.54
 False,False,False,1581,Sydney,3,4.29
 True,False,False,5509,London,4,46.63

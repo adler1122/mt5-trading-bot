@@ -1,4 +1,14 @@
 noisy_day,highest_of_day,highest_of_week,total_volume,session,day_of_week,maximum_movement
+False,False,False,7495,New York,1,1.01
+False,False,False,5239,Sydney,0,8.39
+False,False,False,6629,New York,3,11.37
+False,True,True,10485,New York,2,2.34
+False,True,False,4718,Sydney,2,1.43
+False,True,False,7471,Tokyo,1,22.91
+False,False,False,9081,New York,1,12.37
+False,True,True,14650,London,0,13.42
+False,True,True,14458,Sydney,1,4.29
+False,True,True,7659,New York,3,1.5
 False,True,False,24389,Tokyo,1,10.42
 False,False,False,13929,New York,2,4.67
 False,False,False,14912,London,1,5.46

@@ -1,5 +1,29 @@
 noisy_day,highest_of_day,highest_of_week,total_volume,session,day_of_week,maximum_movement
-False,True,True,4503,New York,4,1.47
+False,False,False,1031,New York,2,5.85
+False,False,False,331,New York,1,5.77
+False,False,False,272,New York,0,0.91
+False,False,False,9683,London,2,5.84
+False,False,False,807,Sydney,2,1.69
+False,True,False,363,New York,4,0.87
+False,True,True,3652,Sydney,0,0.79
+False,False,False,2936,Tokyo,0,1.72
+False,False,False,488,New York,2,2.63
+False,False,False,1409,Sydney,4,0.8
+False,False,False,2212,Tokyo,0,0.91
+False,True,False,5291,London,4,3.96
+False,False,False,574,New York,4,95.2
+False,True,True,1538,Sydney,0,0.93
+False,True,True,1269,New York,3,1.94
+False,False,False,2632,New York,1,0.88
+False,False,False,3896,London,0,2.79
+False,True,False,1887,New York,0,1.47
+False,False,False,3239,New York,4,5.88
+False,False,False,2152,Sydney,3,0.95
+False,True,False,1454,New York,0,0.64
+False,False,False,1268,New York,4,13.89
+False,False,False,912,New York,0,3.96
+False,False,False,3834,New York,4,0.9
+False,True,False,4503,New York,4,1.47
 False,True,False,9446,Tokyo,4,4.85
 False,True,False,892,Sydney,2,1.09
 False,False,False,562,New York,4,0.95
@@ -29,7 +53,7 @@ False,True,False,7623,Tokyo,3,5.97
 False,True,True,3136,London,1,4.68
 False,False,False,3497,Tokyo,0,2.08
 False,False,False,4413,London,2,8.75
-False,False,False,4530,London,0,9.58
+True,False,False,4530,London,0,9.58
 True,False,False,3047,London,0,3.5
 False,False,False,3451,Tokyo,4,100.03
 False,False,False,2608,Tokyo,1,70.87
@@ -44,7 +68,7 @@ False,False,False,3288,Tokyo,4,2.81
 False,True,True,2335,Tokyo,3,2.17
 False,True,False,933,Sydney,4,2.22
 False,False,False,3221,Tokyo,0,3.53
-False,False,False,3825,Sydney,3,22.01
+True,False,False,3825,Sydney,3,22.01
 True,True,True,3593,Tokyo,1,11.59
 False,False,False,2756,Tokyo,1,19.8
 True,False,False,3565,Sydney,4,24.53
