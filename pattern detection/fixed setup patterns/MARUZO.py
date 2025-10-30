@@ -3,8 +3,6 @@ import pandas as pd
 symbol = input("Enter symbol: ")
 timeframes = ["M15", "M30", "H1", "H4"]
 
-# Broker time is UTC+2 relative to London (e.g., broker = 21:36, London = 19:36)
-# Adjust this offset if your broker uses a different timezone
 BROKER_OFFSET = -2  # Broker time minus 2 hours to get UTC
 
 def get_session(broker_hour):
@@ -37,22 +35,22 @@ for tf in timeframes:
         open_ = row["open"]
         time = row["time"]
         noisy = row["noisy_day"]
+        volume = row["tick_volume"]
 
         body = abs(close - open_)
         if body == 0:
-            continue  # avoid division by zero
+            continue
 
         upper_wick = high - max(open_, close)
         lower_wick = min(open_, close) - low
 
-        # Marubozu condition: both wicks are less than 10% of body
         if (upper_wick < 0.1 * body) and (lower_wick < 0.1 * body):
             candle_size = round(high - low, 2)
             same_day = df[(df["date"] == date) & (df["time"] <= time)]
             same_week = df[(pd.to_datetime(df["date"]).dt.isocalendar().week == week) & (df["time"] <= time)]
             percentage = candle_size / high if high != 0 else 0
 
-            if close > open_:  # Bullish Marubozu
+            if close > open_:
                 entry = close
                 tp = close + candle_size
                 sl = close - candle_size
@@ -71,10 +69,11 @@ for tf in timeframes:
                     "session": row["session"],
                     "highest_of_day": highest_day,
                     "highest_of_week": highest_week,
+                    "volume": volume,
                     "success": success
                 })
 
-            elif close < open_:  # Bearish Marubozu
+            elif close < open_:
                 entry = close
                 tp = close - candle_size
                 sl = close + candle_size
@@ -93,9 +92,9 @@ for tf in timeframes:
                     "session": row["session"],
                     "lowest_of_day": lowest_day,
                     "lowest_of_week": lowest_week,
+                    "volume": volume,
                     "success": success
                 })
 
-    # Save results
     pd.DataFrame(bullish_records).to_csv(f"bullish_marubozu_{symbol}_{tf}.csv", index=False)
     pd.DataFrame(bearish_records).to_csv(f"bearish_marubozu_{symbol}_{tf}.csv", index=False)
