@@ -1,0 +1,44 @@
+candle_size,noisy_day,day_of_week,session,highest_of_day,highest_of_week,total_volume,success
+2.85,False,3,London,False,False,26740,True
+1.94,False,0,Sydney,True,True,3973,True
+1.98,False,1,Sydney,False,False,5319,False
+0.27,False,4,New York,True,False,3134,True
+2.1,False,0,New York,False,False,7573,False
+0.17,False,2,New York,True,False,1710,False
+0.82,True,1,New York,True,False,3862,True
+0.02,True,1,New York,True,False,6614,True
+0.3,False,2,New York,True,False,2357,True
+1.32,False,0,New York,True,True,3348,False
+4.56,False,4,New York,False,False,6142,True
+4.87,False,2,London,False,False,7306,True
+7.37,False,3,London,True,False,11910,False
+2.09,False,1,New York,True,False,2282,True
+0.81,False,4,New York,True,False,3080,False
+1.31,False,0,New York,True,True,3136,True
+2.04,False,0,Tokyo,False,False,4810,True
+2.29,False,2,New York,True,False,7828,True
+2.14,False,3,Tokyo,False,False,16582,False
+2.96,False,4,London,True,False,8422,False
+1.29,False,3,New York,False,False,3903,True
+15.94,True,2,London,False,False,12282,True
+1.74,False,1,London,True,False,8597,True
+4.13,False,3,Sydney,True,True,6999,True
+2.47,False,0,New York,True,True,3571,True
+4.2,False,3,New York,False,False,7812,True
+4.47,False,0,Tokyo,False,False,7060,True
+7.73,False,2,Tokyo,True,True,7790,True
+6.54,False,0,Tokyo,True,True,7737,True
+8.77,True,4,Tokyo,False,False,7129,True
+1.95,True,2,Tokyo,False,False,7572,True
+13.62,True,0,New York,True,True,6656,True
+4.24,True,1,New York,True,True,4401,True
+7.26,True,2,New York,True,True,8501,True
+1.02,False,4,New York,True,False,3951,True
+1.77,False,1,Tokyo,False,False,7364,True
+1.48,False,2,New York,True,False,2345,False
+0.11,False,1,New York,True,False,3135,False
+1.17,False,3,New York,True,False,3704,True
+4.94,False,4,Sydney,True,False,9956,False
+8.65,False,4,New York,False,False,8605,True
+8.5,False,2,Sydney,True,True,8230,True
+7.48,True,4,New York,True,False,7559,False

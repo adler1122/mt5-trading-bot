@@ -1,0 +1,5 @@
+candle_size,noisy_day,day_of_week,session,lowest_of_day,lowest_of_week,total_volume,success
+4.74,False,2,Tokyo,False,False,45797,True
+0.51,False,0,New York,True,True,26779,True
+4.12,False,4,Tokyo,False,False,26338,True
+13.7,False,0,New York,True,False,28831,True

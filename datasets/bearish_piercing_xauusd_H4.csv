@@ -1,0 +1,9 @@
+candle_size,noisy_day,day_of_week,session,highest_of_day,highest_of_week,total_volume,success
+2.47,False,0,New York,True,True,15124,False
+11.03,True,0,New York,True,True,58679,False
+6.73,False,0,New York,True,True,16016,False
+21.59,True,2,New York,True,True,28990,True
+17.46,False,0,New York,True,True,31009,True
+7.07,False,4,New York,True,True,26399,True
+2.68,False,3,New York,True,False,15925,True
+1.9,False,3,New York,True,True,18551,True
