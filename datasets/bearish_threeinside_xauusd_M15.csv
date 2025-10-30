@@ -1,0 +1,55 @@
+noisy_day,highest_of_day,highest_of_week,total_volume,session,day_of_week,maximum_movement
+False,False,False,5019,London,1,1.78
+False,False,False,830,New York,3,0.62
+False,True,True,4503,New York,4,1.47
+False,True,False,892,Sydney,2,1.09
+False,False,False,2835,London,0,4.04
+False,False,False,562,New York,4,0.95
+False,False,False,3885,New York,4,0.52
+False,True,True,3976,Tokyo,0,3.03
+False,False,False,5368,London,4,43.22
+False,False,False,4987,Tokyo,2,5.95
+False,True,False,4265,Sydney,4,1.77
+False,False,False,3891,Tokyo,2,1.99
+False,False,False,2403,London,0,1.88
+True,True,True,17343,London,0,12.65
+False,False,False,2322,Tokyo,0,4.26
+False,False,False,2011,Sydney,0,10.93
+False,False,False,2964,Tokyo,3,17.56
+False,True,False,2996,Sydney,2,135.2
+False,True,True,4729,London,1,7.14
+False,False,False,3267,Tokyo,2,34.08
+False,True,True,1724,Sydney,0,2.37
+False,True,True,2192,Sydney,0,1.71
+False,False,False,2672,Tokyo,0,7.47
+False,False,False,3806,London,4,70.91
+False,False,False,3090,London,2,3.31
+False,True,False,7221,Tokyo,2,4.64
+False,True,False,7623,Tokyo,3,5.97
+False,False,False,9834,London,3,6.24
+False,True,True,3136,London,1,4.68
+False,False,False,3509,London,3,3.02
+False,False,False,4530,London,0,9.58
+False,False,False,4783,London,2,73.09
+True,False,False,3785,London,0,25.02
+False,False,False,3192,London,1,5.46
+False,True,False,1236,Sydney,2,4.21
+False,False,False,2608,Tokyo,1,70.87
+False,False,False,2495,Sydney,0,17.02
+False,False,False,2350,Tokyo,1,1.33
+False,False,False,2135,Sydney,3,1.73
+False,False,False,2883,New York,4,3.39
+False,False,False,3507,Sydney,0,13.56
+False,True,True,2406,Tokyo,2,4.24
+False,False,False,2453,Sydney,1,1.51
+False,False,False,2431,Sydney,1,1.83
+False,True,True,2335,Tokyo,3,2.17
+False,False,False,3825,Sydney,3,22.01
+False,False,False,1417,New York,4,206.37
+False,False,False,3374,London,1,18.84
+False,False,False,2408,Tokyo,2,8.16
+False,True,True,2443,Sydney,0,2.66
+False,False,False,3327,Tokyo,2,3.19
+False,False,False,2975,Tokyo,0,5.91
+False,False,False,2439,Tokyo,1,2.26
+False,False,False,4323,London,3,11.49
