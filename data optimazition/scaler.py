@@ -11,8 +11,10 @@ scaler_folder = "scalers"
 os.makedirs(scaler_folder, exist_ok=True)
 
 # Columns to scale by name
-scale_cols = {"gap_size", "candle_size", "volume","percentage"}
-
+scale_cols = ["gap_size", "candle_size", "volume","percentage"]
+market_movement_patterns = ["orderblock", "engulfing", "star", "threeinside", "tweezer"]
+if pattern in market_movement_patterns:
+    scale_cols.append("target")
 for filename in os.listdir(base_path):
     if not filename.endswith(".csv"):
         continue

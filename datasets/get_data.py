@@ -17,22 +17,22 @@ timeframes = {
 }
 
 # --- Fixed Start Date for non-M15 ---
-fixed_start_date = datetime(2021, 8, 9) # get this from first row of m15 tf 
+fixed_start_date = datetime(2016, 1, 1) # get this from first row of m15 tf 
 end_date = datetime.now()
 
 # --- Download and Save ---
 for label, tf in timeframes.items():
     print(f"Downloading {label} data...")
 
-    if label == "M15":
+    if label == "M15" or label== "M30":
         rates = mt5.copy_rates_from_pos(symbol, tf, 0, 99998)
         if rates is None or len(rates) == 0:
-            print("No M15 data available")
+            print(f"No {label} data available")
             continue
         df = pd.DataFrame(rates)
         df['time'] = pd.to_datetime(df['time'], unit='s')
         first_time = df['time'].iloc[0]
-        print(f"First M15 candle date: {first_time}")
+        print(f"First {label} candle date: {first_time}")
     else:
         rates = mt5.copy_rates_range(symbol, tf, fixed_start_date, end_date)
         if rates is None or len(rates) == 0:

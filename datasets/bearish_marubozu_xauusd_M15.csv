@@ -1,7 +1,5 @@
 candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_week,volume,success
-2.57,False,0.0014799458696841438,1,Tokyo,False,False,1344,True
-1.55,False,0.0008929342973183167,1,Tokyo,False,False,688,True
-1.21,False,0.0006996848526903172,2,New York,True,False,146,True
+1.21,False,0.0006996848526903172,2,New York,True,True,146,True
 0.97,False,0.0005535202748199632,2,New York,False,False,241,False
 1.5,False,0.0008559640723346704,3,Tokyo,False,False,568,False
 2.85,False,0.001601168572150903,0,Sydney,True,True,1086,False
@@ -508,7 +506,7 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 5.9,False,0.003194248187670202,3,London,True,False,2586,False
 5.27,False,0.0028626990852399885,4,London,True,True,1675,False
 1.93,False,0.001030470973287843,4,New York,False,False,832,False
-2.01,False,0.0010789918673001046,0,Sydney,True,True,1207,False
+2.01,True,0.0010789918673001046,0,Sydney,True,True,1207,False
 2.99,False,0.001641954969796815,1,Sydney,False,False,561,False
 1.71,False,0.0009409460084079854,2,Sydney,False,False,511,True
 2.41,False,0.0013128649873616316,3,Sydney,False,False,637,True
@@ -920,8 +918,8 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 3.14,False,0.001604136014386137,3,Tokyo,False,False,1787,False
 9.1,False,0.0046738332109234155,3,London,True,False,5883,True
 17.09,False,0.008817277530130428,3,London,True,False,6001,False
-27.3,False,0.014264291723053291,4,London,True,False,7501,False
-3.69,False,0.001974920120100833,4,London,True,False,2889,False
+27.3,True,0.014264291723053291,4,London,True,False,7501,False
+3.69,True,0.001974920120100833,4,London,True,False,2889,False
 1.78,False,0.0009487413187504331,1,Tokyo,False,False,984,False
 2.43,False,0.0012994513427663876,1,London,False,False,1944,False
 1.78,False,0.0009479329204322148,2,Sydney,False,False,1148,False
@@ -1294,8 +1292,8 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 1.86,False,0.0009991029559481542,2,Sydney,False,False,1321,False
 2.04,False,0.001084650598950441,3,Tokyo,False,False,1563,False
 2.04,False,0.0010891443276402407,3,London,False,False,4086,False
-1.51,False,0.0008069989792264567,4,New York,False,False,496,False
-3.5,False,0.0018291567587342234,4,London,False,False,7431,False
+1.51,True,0.0008069989792264567,4,New York,False,False,496,False
+3.5,True,0.0018291567587342234,4,London,False,False,7431,False
 1.09,False,0.0005676876363882567,1,New York,True,False,234,False
 1.87,False,0.0009736236502035758,1,New York,True,False,347,False
 1.91,False,0.0009977433240001671,1,Sydney,True,False,1038,False
@@ -1439,8 +1437,8 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 4.53,False,0.002102761441018238,2,London,True,False,996,False
 3.6,False,0.0016707119553363004,2,London,False,False,910,False
 5.83,False,0.002664436400862857,2,New York,False,False,1308,False
-13.24,False,0.005994856377005832,3,New York,False,False,1217,False
-2.39,False,0.0010830504864664005,3,Tokyo,False,False,1157,False
+13.24,True,0.005994856377005832,3,New York,False,False,1217,False
+2.39,True,0.0010830504864664005,3,Tokyo,False,False,1157,False
 0.9,False,0.00041246184727912667,4,New York,False,False,146,False
 9.54,False,0.004371654813402742,4,Sydney,True,False,1411,False
 1.95,False,0.0009010799096147536,4,New York,False,False,644,False
@@ -1455,15 +1453,15 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 2.38,False,0.0010528923572401833,0,Tokyo,False,False,652,False
 3.74,False,0.001640602724102384,2,London,False,False,2128,False
 2.9,False,0.0012638423422049255,2,New York,False,False,962,False
-1.75,False,0.0007640653516010444,4,Sydney,False,False,418,True
-3.95,False,0.0017240401024821812,4,Tokyo,False,False,933,False
+1.75,True,0.0007640653516010444,4,Sydney,False,False,418,True
+3.95,True,0.0017240401024821812,4,Tokyo,False,False,933,False
 9.83,False,0.004176403109997027,1,London,False,False,2246,False
 17.56,False,0.007505813158254685,2,London,True,False,2846,False
 2.67,True,0.00111719688189095,4,Tokyo,False,False,1008,False
 18.1,True,0.007504052602994159,4,London,False,False,2803,True
 7.28,True,0.0030392598901190656,4,London,False,False,2005,True
 16.33,True,0.006834580550114676,4,London,False,False,2538,True
-2.77,False,0.0011606129041719215,0,New York,False,False,613,False
+2.77,True,0.0011606129041719215,0,New York,False,False,613,False
 2.68,False,0.0011228046655047594,1,Sydney,False,False,784,False
 4.59,False,0.00193283503526687,1,Tokyo,False,False,1026,False
 1.8,False,0.0007550082212006309,2,Sydney,False,False,574,True
@@ -1472,8 +1470,8 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 1.65,False,0.0006948012026377179,3,Sydney,False,False,574,False
 4.18,False,0.001756457502552746,4,Sydney,True,False,1049,False
 6.62,False,0.002766968581113558,4,Tokyo,False,False,2340,True
-6.01,False,0.0025411832358015088,0,Tokyo,True,False,1124,True
-3.21,False,0.0013602040729849064,0,Tokyo,False,False,636,True
+6.01,True,0.0025411832358015088,0,Tokyo,True,False,1124,True
+3.21,True,0.0013602040729849064,0,Tokyo,False,False,636,True
 3.88,False,0.001664721631083957,1,New York,True,False,397,False
 1.83,False,0.0007841456882699519,1,Sydney,False,False,658,False
 24.86,False,0.010669436313851383,1,Sydney,True,False,1486,False
@@ -1765,8 +1763,8 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 13.5,True,0.005009629621383326,2,London,True,False,1721,True
 10.68,True,0.003999565590254242,2,London,False,False,1552,False
 2.43,True,0.0009118506816365282,2,New York,False,False,906,True
-3.99,False,0.0014991771433724348,3,Tokyo,False,False,1160,False
-2.79,False,0.001033593645807092,3,New York,False,False,1134,False
+3.99,True,0.0014991771433724348,3,Tokyo,False,False,1160,False
+2.79,True,0.001033593645807092,3,New York,False,False,1134,False
 5.01,False,0.0018552463478309171,4,Sydney,False,False,1164,False
 2.89,False,0.0010758932892552138,4,Tokyo,True,False,1053,False
 2.77,True,0.0010562440419447092,0,New York,False,False,279,False
@@ -1832,12 +1830,12 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 3.35,False,0.0012623931205227438,1,Tokyo,False,False,1078,True
 2.48,False,0.000939176932602694,1,Tokyo,False,False,947,False
 1.23,False,0.0004646067840145048,1,New York,False,False,654,True
-2.97,False,0.00112261444430585,2,Sydney,True,False,801,False
-3.35,False,0.0012680219992354017,2,London,True,False,1284,True
-3.61,False,0.001368450580359512,2,London,False,False,943,False
-2.61,False,0.0009886738134020226,2,London,False,False,829,True
-14.47,False,0.005525832407269506,2,New York,True,False,1585,True
-11.53,False,0.004422165288495466,2,New York,True,False,1475,True
+2.97,True,0.00112261444430585,2,Sydney,True,False,801,False
+3.35,True,0.0012680219992354017,2,London,True,False,1284,True
+3.61,True,0.001368450580359512,2,London,False,False,943,False
+2.61,True,0.0009886738134020226,2,London,False,False,829,True
+14.47,True,0.005525832407269506,2,New York,True,False,1585,True
+11.53,True,0.004422165288495466,2,New York,True,False,1475,True
 4.54,False,0.0017390038648786336,3,Sydney,False,False,884,False
 3.69,False,0.0014158870973930795,3,London,False,False,1543,True
 2.47,False,0.0009516947487256154,3,New York,False,False,1110,False
@@ -1891,17 +1889,17 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 4.84,False,0.0017295968324077845,4,Tokyo,False,False,1029,False
 6.06,False,0.0021524090287520646,4,London,False,False,1538,False
 3.75,False,0.001335037434449662,4,New York,False,False,1384,True
-2.99,False,0.0010762131693937932,0,Sydney,False,False,1246,False
-3.56,False,0.0012705165220680869,0,Tokyo,False,False,1079,False
-2.97,False,0.001053452984783457,0,New York,False,False,952,True
+2.99,True,0.0010762131693937932,0,Sydney,False,False,1246,False
+3.56,True,0.0012705165220680869,0,Tokyo,False,False,1079,False
+2.97,True,0.001053452984783457,0,New York,False,False,952,True
 4.47,False,0.001584039122576987,1,Sydney,False,False,934,False
 3.96,False,0.0013925078856033674,2,Sydney,True,False,1294,False
 13.37,False,0.004640282651173606,2,London,False,False,1590,False
 4.59,False,0.00160857908847185,3,London,False,False,1138,False
 1.66,False,0.0005809863468208496,3,New York,False,False,309,False
 2.55,False,0.0008897293827022651,4,London,False,False,913,False
-7.51,False,0.002573442484759806,1,Tokyo,False,False,1102,False
-5.98,False,0.002055067562923557,1,Tokyo,True,False,1303,False
+7.51,True,0.002573442484759806,1,Tokyo,False,False,1102,False
+5.98,True,0.002055067562923557,1,Tokyo,True,False,1303,False
 4.08,False,0.001411476549770116,2,Tokyo,False,False,1053,True
 4.32,False,0.0014980234412927387,2,Tokyo,False,False,809,False
 2.53,False,0.0008710861376798121,3,New York,True,False,355,False
@@ -1917,11 +1915,11 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 2.58,False,0.0008769961860863535,3,New York,False,False,990,True
 9.79,False,0.003323398217110578,4,Sydney,True,False,1200,True
 3.93,False,0.0013404002783121188,4,Tokyo,False,False,764,False
-3.91,False,0.0013259945807178005,1,Sydney,True,False,1215,True
-4.02,False,0.0013673934487567602,1,Sydney,True,False,728,False
-3.26,False,0.0011080144109849772,1,Tokyo,False,False,922,False
-2.88,False,0.0009794519150325464,1,Tokyo,False,False,862,False
-17.88,False,0.0061067033706406915,1,London,True,False,1714,True
+3.91,True,0.0013259945807178005,1,Sydney,True,False,1215,True
+4.02,True,0.0013673934487567602,1,Sydney,True,False,728,False
+3.26,True,0.0011080144109849772,1,Tokyo,False,False,922,False
+2.88,True,0.0009794519150325464,1,Tokyo,False,False,862,False
+17.88,True,0.0061067033706406915,1,London,True,False,1714,True
 2.32,False,0.0007975523393722713,2,Tokyo,True,False,697,False
 2.71,False,0.0009293234114056445,2,Tokyo,False,False,768,False
 2.03,False,0.0006962116483410956,2,New York,False,False,682,False
@@ -2018,8 +2016,8 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 5.42,True,0.0016524994816883543,0,Tokyo,False,False,1097,False
 6.34,False,0.0019116250320363026,1,Tokyo,False,False,863,False
 10.29,False,0.003095118495814521,1,New York,False,False,1027,False
-7.01,False,0.002115160055157098,2,Tokyo,False,False,971,True
-22.48,False,0.0067964276428368435,2,Tokyo,True,False,1464,False
+7.01,True,0.002115160055157098,2,Tokyo,False,False,971,True
+22.48,True,0.0067964276428368435,2,Tokyo,True,False,1464,False
 4.88,True,0.0015106722181806925,3,Tokyo,False,False,920,True
 6.08,False,0.001861786825408491,4,Tokyo,False,False,1034,False
 9.98,True,0.0029339565786185707,2,Sydney,False,False,1118,True
@@ -2044,8 +2042,8 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 6.71,True,0.0020791115903499476,1,Sydney,False,False,1087,True
 5.23,True,0.0015870944639838804,1,New York,False,False,672,False
 8.29,False,0.0024972888299795155,2,Tokyo,False,False,1240,False
-9.05,False,0.0027202746124735866,3,Tokyo,False,False,1295,True
-3.36,False,0.001020181993180569,3,New York,False,False,1026,False
+9.05,True,0.0027202746124735866,3,Tokyo,False,False,1295,True
+3.36,True,0.001020181993180569,3,New York,False,False,1026,False
 6.57,True,0.001973358163004791,4,Tokyo,False,False,1084,False
 5.91,False,0.0017678731678133414,0,Tokyo,False,False,984,True
 7.7,False,0.0023093372202177974,0,London,False,False,890,False
@@ -2056,21 +2054,21 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 3.24,False,0.0009837827661906657,4,New York,False,False,518,False
 3.59,False,0.001090419796434722,4,New York,False,False,409,False
 7.27,True,0.002162319719939443,0,London,False,False,1159,False
-8.34,False,0.0024703937819536845,1,Sydney,True,False,1262,False
-3.99,False,0.0011843276936776492,1,Sydney,False,False,929,True
+8.34,True,0.0024703937819536845,1,Sydney,True,False,1262,False
+3.99,True,0.0011843276936776492,1,Sydney,False,False,929,True
 5.7,False,0.0016933945728189377,2,Sydney,False,False,1124,True
-8.56,False,0.002515183658358138,3,London,False,False,1177,True
-6.83,False,0.0020295789589418853,4,Tokyo,False,False,1251,False
-5.24,False,0.0015591943369109504,4,Tokyo,False,False,963,False
-4.76,False,0.0014154281670205235,4,London,False,False,1019,False
-5.71,False,0.001723596672341556,4,New York,True,False,687,False
+8.56,True,0.002515183658358138,3,London,False,False,1177,True
+6.83,True,0.0020295789589418853,4,Tokyo,False,False,1251,False
+5.24,True,0.0015591943369109504,4,Tokyo,False,False,963,False
+4.76,True,0.0014154281670205235,4,London,False,False,1019,False
+5.71,True,0.001723596672341556,4,New York,True,False,687,False
 12.85,False,0.0038845810849619856,0,Sydney,True,False,1261,False
 4.36,False,0.0013144843513049876,0,Tokyo,False,False,896,False
 2.26,False,0.0006775189615373084,0,New York,False,False,777,False
-7.03,False,0.0020826544215671755,3,Sydney,False,False,1281,False
-4.46,False,0.0012977792262209601,0,Sydney,True,False,815,True
-4.49,False,0.0013142335296390396,0,Tokyo,False,False,915,False
-4.83,False,0.0014123137383330604,0,London,False,False,964,True
+7.03,True,0.0020826544215671755,3,Sydney,False,False,1281,False
+4.46,True,0.0012977792262209601,0,Sydney,True,False,815,True
+4.49,True,0.0013142335296390396,0,Tokyo,False,False,915,False
+4.83,True,0.0014123137383330604,0,London,False,False,964,True
 6.45,False,0.0018971425209935733,1,Sydney,False,False,1074,False
 7.1,False,0.002094704233662782,1,New York,False,False,972,False
 4.89,False,0.0014424693659624427,2,Sydney,True,False,550,True
@@ -2093,8 +2091,8 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 1.64,False,0.0004918942427378113,3,New York,False,False,740,False
 4.24,False,0.0012716312269441862,3,New York,False,False,705,True
 8.41,True,0.002552096451645207,4,Tokyo,False,False,979,False
-17.51,False,0.005361314639665156,0,New York,True,False,1083,False
-7.46,False,0.002268235580285202,0,London,False,False,951,False
+17.51,True,0.005361314639665156,0,New York,True,False,1083,False
+7.46,True,0.002268235580285202,0,London,False,False,951,False
 1.52,False,0.00045505439696311064,1,New York,False,False,353,False
 6.95,False,0.002067043592313572,3,Sydney,True,False,802,True
 37.98,False,0.011338430352840727,3,London,True,False,1548,False
@@ -2103,9 +2101,9 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 4.91,False,0.0014739610225867267,4,Sydney,False,False,726,False
 16.9,False,0.005078628589974366,0,Sydney,True,False,1291,False
 5.19,False,0.0015670668373632215,0,Tokyo,False,False,879,False
-5.58,False,0.001671489422886824,1,Tokyo,False,False,905,True
-10.53,False,0.003175713781632733,1,London,True,False,1513,True
-1.45,False,0.0004389191087217767,1,New York,False,False,409,False
+5.58,True,0.001671489422886824,1,Tokyo,False,False,905,True
+10.53,True,0.003175713781632733,1,London,True,False,1513,True
+1.45,True,0.0004389191087217767,1,New York,False,False,409,False
 8.67,False,0.0026250215724091157,2,Sydney,True,False,902,True
 5.64,False,0.0017125159409728547,2,London,False,False,856,False
 4.58,False,0.0013795097619893856,3,Sydney,False,False,611,False
@@ -2121,14 +2119,14 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 7.17,False,0.002126895888891196,0,London,False,False,1162,True
 11.13,False,0.0033199699323477826,0,London,True,False,1425,False
 2.16,False,0.0006492803809111568,1,New York,False,False,420,False
-7.99,False,0.002395988892687286,2,London,False,False,1362,False
+7.99,True,0.002395988892687286,2,London,False,False,1362,False
 1.23,False,0.0003672529775856252,3,Sydney,True,False,398,True
 2.9,False,0.0008675232212034641,3,Tokyo,False,False,671,True
 3.01,False,0.0009013595256632927,4,Sydney,True,False,745,False
 1.56,False,0.00046515233739049546,4,New York,False,False,753,True
-3.32,False,0.0009695214010168293,2,Sydney,True,False,1086,False
-5.01,False,0.001463756683320186,2,Tokyo,True,False,1087,False
-12.71,False,0.0037262346267168977,2,London,True,False,1168,True
+3.32,True,0.0009695214010168293,2,Sydney,True,False,1086,False
+5.01,True,0.001463756683320186,2,Tokyo,True,False,1087,False
+12.71,True,0.0037262346267168977,2,London,True,False,1168,True
 4.32,False,0.0012804818405740828,3,Tokyo,False,False,918,True
 8.77,False,0.002609008665954668,3,London,True,False,1451,False
 3.7,False,0.0010976980974221895,3,London,False,False,738,False
@@ -2137,7 +2135,7 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 2.58,False,0.000778543580334834,1,Sydney,True,False,395,False
 3.72,False,0.0011185446891678569,1,Tokyo,False,False,675,True
 4.74,False,0.0014245228299318094,1,New York,False,False,828,False
-6.9,False,0.0020721405211583566,2,Sydney,True,False,966,False
+6.9,True,0.0020721405211583566,2,Sydney,True,False,966,False
 4.74,True,0.0014384952247421178,4,Sydney,False,False,646,False
 6.21,False,0.0018469005677509154,0,Sydney,False,False,858,True
 5.64,False,0.0016789311995427589,0,Tokyo,False,False,818,False
@@ -2155,11 +2153,11 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 5.06,False,0.0014885899287771496,4,Tokyo,False,False,1255,False
 7.48,False,0.0022018586277239905,4,Tokyo,False,False,1223,False
 15.35,False,0.004517070701720313,4,New York,False,False,910,False
-7.6,False,0.0022525125888779225,0,Tokyo,True,False,987,True
-5.85,False,0.001740118506532137,0,Tokyo,True,False,1032,False
-6.2,False,0.0018456665535451684,0,Tokyo,True,False,998,False
-7.3,False,0.0021731170536105,0,London,False,False,1145,True
-5.2,False,0.0015534723093560856,0,New York,False,False,521,False
+7.6,True,0.0022525125888779225,0,Tokyo,True,False,987,True
+5.85,True,0.001740118506532137,0,Tokyo,True,False,1032,False
+6.2,True,0.0018456665535451684,0,Tokyo,True,False,998,False
+7.3,True,0.0021731170536105,0,London,False,False,1145,True
+5.2,True,0.0015534723093560856,0,New York,False,False,521,False
 3.81,False,0.001135655714494365,1,Sydney,False,False,737,False
 10.68,False,0.0031914702876506833,1,London,True,False,1315,False
 5.09,False,0.0015189450344821412,2,Tokyo,False,False,951,False
@@ -2176,13 +2174,13 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 1.83,False,0.0005517249696249778,2,Sydney,True,False,498,False
 1.92,False,0.000577466186647899,2,Tokyo,False,False,687,False
 4.17,False,0.0012490789166262287,3,Tokyo,True,False,903,False
-4.5,False,0.001347999568640138,4,Sydney,True,False,899,False
-2.29,False,0.0006868482065463533,4,Sydney,False,False,582,True
-2.72,False,0.000816333880557148,4,Sydney,True,False,618,True
-4.54,False,0.0013622956181491383,4,Tokyo,False,False,726,False
-3.1,False,0.0009305648528656895,4,Tokyo,False,False,483,False
-2.07,False,0.0006137188396859656,4,New York,False,False,680,False
-2.34,False,0.0006936272257578766,4,New York,False,False,525,True
+4.5,True,0.001347999568640138,4,Sydney,True,False,899,False
+2.29,True,0.0006868482065463533,4,Sydney,False,False,582,True
+2.72,True,0.000816333880557148,4,Sydney,True,False,618,True
+4.54,True,0.0013622956181491383,4,Tokyo,False,False,726,False
+3.1,True,0.0009305648528656895,4,Tokyo,False,False,483,False
+2.07,True,0.0006137188396859656,4,New York,False,False,680,False
+2.34,True,0.0006936272257578766,4,New York,False,False,525,True
 1.74,False,0.000517023135299606,0,Tokyo,False,False,558,False
 2.0,False,0.0005942300264432362,0,Tokyo,False,False,637,False
 3.63,False,0.0010774294847631287,0,London,False,False,888,False
@@ -2201,10 +2199,10 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 9.5,False,0.0026676026676026674,3,Sydney,True,False,1289,True
 3.86,False,0.001088406218013969,3,New York,False,False,1045,False
 5.19,False,0.001462087150535817,3,New York,False,False,504,False
-5.31,False,0.0014976773309189986,4,New York,True,False,477,False
-6.89,False,0.0019364430716652566,4,Tokyo,False,False,1136,False
-6.94,False,0.0019112560311969862,0,London,False,False,1279,False
-9.36,False,0.0025673025494740596,0,London,False,False,1234,False
+5.31,True,0.0014976773309189986,4,New York,True,False,477,False
+6.89,True,0.0019364430716652566,4,Tokyo,False,False,1136,False
+6.94,True,0.0019112560311969862,0,London,False,False,1279,False
+9.36,True,0.0025673025494740596,0,London,False,False,1234,False
 5.49,False,0.0015038541398447389,1,Tokyo,False,False,1094,False
 4.06,False,0.0011177644710578841,1,New York,False,False,645,False
 3.85,False,0.0010585094537266407,2,Sydney,False,False,693,True
@@ -2216,16 +2214,16 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 1.96,False,0.0005389012463466069,4,New York,False,False,403,False
 3.31,False,0.0009106014921759799,4,Sydney,True,False,681,False
 4.48,False,0.0012265739435173653,4,Tokyo,False,False,988,True
-4.42,False,0.0012120514107236385,0,London,False,False,1041,False
-2.74,False,0.0007443043063708647,0,New York,False,False,528,False
+4.42,True,0.0012120514107236385,0,London,False,False,1041,False
+2.74,True,0.0007443043063708647,0,New York,False,False,528,False
 2.91,False,0.0007898015182644995,1,Tokyo,False,False,957,False
 2.25,False,0.0006095809875753848,1,New York,False,False,706,False
-5.13,False,0.0013898032331212055,2,Sydney,True,False,1029,True
-2.0,False,0.000542280234156605,2,London,False,False,835,False
+5.13,True,0.0013898032331212055,2,Sydney,True,False,1029,True
+2.0,True,0.000542280234156605,2,London,False,False,835,False
 2.3,False,0.0006279400562961911,3,Sydney,False,False,660,True
 24.76,False,0.006774541295699425,3,London,True,False,1603,False
 2.8,False,0.0007599671042810575,4,New York,False,False,584,False
-3.29,False,0.000891664159708163,0,Sydney,False,False,785,False
+3.29,True,0.000891664159708163,0,Sydney,False,False,785,False
 9.32,False,0.0024606870914256145,1,Tokyo,False,False,1182,False
 24.35,False,0.006440742523713043,1,New York,False,False,1165,False
 2.3,False,0.0006146593584559757,3,Sydney,False,False,541,False
@@ -2278,3 +2276,6 @@ candle_size,noisy_day,percentage,day_of_week,session,lowest_of_day,lowest_of_wee
 18.23,True,0.004603825999116106,3,Sydney,False,False,1196,False
 17.08,True,0.004336665388687599,3,Sydney,False,False,1256,False
 8.0,True,0.00200758868523017,3,Tokyo,False,False,1236,True
+9.74,True,0.002423410041476638,4,Sydney,True,False,1340,True
+9.96,True,0.0024861464729669016,4,Sydney,False,False,1132,False
+36.59,True,0.009113052660941642,4,London,True,False,1441,False

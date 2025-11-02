@@ -1,7 +1,22 @@
 noisy_day,highest_of_day,highest_of_week,total_volume,session,day_of_week,maximum_movement
-False,True,True,45152,New York,2,107.34
+False,True,True,72234,New York,3,6.54
+False,True,False,28668,New York,2,3239.98
+False,True,False,46876,New York,2,3.61
+False,True,False,36059,New York,3,8.01
+False,True,False,31372,New York,2,6.07
+False,True,False,62483,New York,3,6.91
+False,False,False,26647,New York,2,3.38
+False,True,False,15151,New York,1,1.74
+False,True,False,18762,New York,2,7.66
+False,True,False,20670,New York,2,8.01
+False,False,False,42778,New York,4,40.53
+False,True,False,39510,New York,1,18.25
+False,False,False,35649,New York,1,157.19
+False,True,False,73825,New York,4,29.38
+False,True,False,72430,London,2,11.9
+False,True,False,45152,New York,2,107.34
 False,True,False,56802,New York,4,182.05
-False,True,True,41147,London,3,16.21
+False,True,False,41147,London,3,16.21
 False,True,False,89601,New York,2,41.62
 False,True,False,78817,London,2,11.7
 False,True,False,96807,New York,2,9.62

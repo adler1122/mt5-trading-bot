@@ -74,13 +74,13 @@ True,False,False,2683,London,2,4.93
 True,False,False,1890,New York,4,1180.53
 True,False,False,3970,London,1,1140.02
 False,False,False,3733,London,0,14.9
-False,False,False,3592,London,0,8.54
-False,False,False,2839,Sydney,0,1113.71
+True,False,False,3592,London,0,8.54
+True,False,False,2839,Sydney,0,1113.71
 False,True,False,2870,Tokyo,3,2.29
-False,False,False,2160,Tokyo,0,1.93
-False,True,False,2723,Sydney,2,3.12
-False,False,False,3557,London,0,5.01
-False,False,False,2847,New York,2,3.35
+True,False,False,2160,Tokyo,0,1.93
+True,True,False,2723,Sydney,2,3.12
+True,False,False,3557,London,0,5.01
+True,False,False,2847,New York,2,3.35
 False,False,False,2828,Tokyo,4,4.91
 False,False,False,3971,London,1,7.2
 True,False,False,3357,Sydney,3,12.33
