@@ -1,7 +1,6 @@
 import pandas as pd
 import os
 import joblib
-from collections import defaultdict
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.linear_model import LinearRegression
@@ -79,27 +78,31 @@ for filename in os.listdir(base_path):
         model.fit(X_train, y_train)
         preds = model.predict(X_test)
 
-        under_count = sum(preds < y_test)
-        over_count = sum(preds > y_test)
+        # Profit-based scoring and TP count
+        profit = 0
+        tp_count = 0
+        for pred, true in zip(preds, y_test):
+            if pred < true:
+                profit += pred
+                tp_count += 1
+            else:
+                profit -= pred
 
-        sum_tp = sum(true for pred, true in zip(preds, y_test) if pred < true)
-        sum_sl = sum(pred for pred, true in zip(preds, y_test) if pred > true)
+        total = len(y_test)
+        tp_ratio = tp_count / total
 
-        if sum_tp < sum_sl:
-            print(f"{filename} — {name}: Skipped (TP sum < SL sum)")
+        if profit <= 0 or tp_ratio <= 0.5:
+            print(f"{filename} — {name}: Skipped (Profit={profit:.2f}, TP Ratio={tp_ratio:.2f})")
             continue
 
-        score = under_count - over_count
-        threshold = 0.3 * len(y_test)
+        score = profit
+        print(f"{filename} — {name}: Net Profit = {score:.2f}, TP Count = {tp_count}/{total}")
 
-        print(f"{filename} — {name}: Under={under_count}, Over={over_count}, Score={score}")
-
-        if score >= threshold:
-            accurate_found = True
-            if score > best_score:
-                best_score = score
-                best_model = model
-                best_name = name
+        accurate_found = True
+        if score > best_score:
+            best_score = score
+            best_model = model
+            best_name = name
 
     # Save best model if valid
     if accurate_found and best_model:
@@ -107,4 +110,4 @@ for filename in os.listdir(base_path):
         joblib.dump(best_model, model_filename)
         print(f"Saved best model: {model_filename}")
     else:
-        print(f" No accurate model found for {direction.upper()} {timeframe}")
+        print(f"No accurate model found for {direction.upper()} {timeframe}")

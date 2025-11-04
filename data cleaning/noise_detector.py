@@ -3,7 +3,7 @@ import pandas as pd
 # --- Timeframes and file paths ---
 timeframes = ["M15", "M30", "H1", "H4", "D1"]
 symbol = input("Enter symbol: ")
-files = {tf: f"{symbol}_{tf}.csv" for tf in timeframes}
+files = {tf: f"datasets/{symbol}_{tf}.csv" for tf in timeframes}
 
 # --- Load all datasets ---
 datasets = {}
@@ -13,22 +13,18 @@ for tf in timeframes:
     df.drop(columns=["spread", "real_volume"], inplace=True)
     datasets[tf] = df
 
-# --- Detect noisy days from D1 ---
+# --- Detect noisy days from D1 based on volume only ---
 daily_df = datasets["D1"].copy()
-daily_df["candle_size"] = daily_df["high"] - daily_df["low"]
 
-def get_iqr_bounds(series):
-    q1 = series.quantile(0.25)
+def get_upper_volume_threshold(series):
     q3 = series.quantile(0.75)
-    iqr = q3 - q1
-    return q1 - 1.5 * iqr, q3 + 1.5 * iqr
+    iqr = q3 - series.quantile(0.25)
+    return q3 + 1.5 * iqr
 
-size_low, size_high = get_iqr_bounds(daily_df["candle_size"])
-vol_low, vol_high = get_iqr_bounds(daily_df["tick_volume"])
+vol_threshold = get_upper_volume_threshold(daily_df["tick_volume"])
 
-noisy_dates = set(daily_df.loc[
-    (daily_df["candle_size"] < size_low) | (daily_df["candle_size"] > size_high) |
-    (daily_df["tick_volume"] < vol_low) | (daily_df["tick_volume"] > vol_high),"time"].dt.date)
+# Mark noisy days: volume > upper threshold
+noisy_dates = set(daily_df.loc[daily_df["tick_volume"] > vol_threshold, "time"].dt.date)
 
 # --- Clean and save intra-day timeframes ---
 for tf in ["M15", "M30", "H1", "H4"]:

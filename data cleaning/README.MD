@@ -1,4 +1,4 @@
-This module performs structured data cleaning on gold candlestick data extracted from MetaTrader 5 (MT5). The data is sourced from the default MT5 demo server (typically MetaQuotes) and includes five timeframes: 15-minute, 30-minute, 1-hour, 4-hour, and 1-day. Only data from January 1, 2023 onward is used.
+This module performs structured data cleaning on gold candlestick data extracted from MetaTrader 5 (MT5). The data is sourced from the default MT5 demo server (typically MetaQuotes) and includes five timeframes: 15-minute, 30-minute, 1-hour, 4-hour, and 1-day.
 
 Cleaning Steps
     Column Filtering
