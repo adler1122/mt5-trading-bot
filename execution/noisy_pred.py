@@ -3,7 +3,7 @@ import pandas as pd
 # Load dataset
 symbol=input("symbol: ")
 
-df = pd.read_csv(f"cleaned_{symbol}_H1.csv")
+df = pd.read_csv(f"datasets/cleaned_{symbol}_H1.csv")
 
 # Convert time_only to integer hour
 df["hour_int"] = pd.to_datetime(df["time_only"], format="%H:%M:%S").dt.hour
