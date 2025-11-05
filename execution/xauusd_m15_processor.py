@@ -51,7 +51,7 @@ class XAUUSD_M15_Processor:
         if pattern == "bearish fvg":
             return self._process_fvg(candles, pattern)
 
-        return self._process_orderblock_or_engulfing(candles, pattern, noisy_day, is_highest_day, is_highest_week, session_code)
+        return self._process_trigger(candles, pattern, noisy_day, is_highest_day, is_highest_week, session_code)
 
     def _process_fvg(self, candles, pattern):
         c1, c2, c3 = candles[-3], candles[-2], candles[-1]
