@@ -62,30 +62,36 @@ class XAUUSD_M15_Processor:
         highs = [float(c1[HIGH]), float(c2[HIGH]), float(c3[HIGH])]
         lows = [float(c1[LOW]), float(c2[LOW]), float(c3[LOW])]
 
-        candle_size = max(highs) - min(lows
-        )
+        candle_size = max(highs) - min(lows)
         gap_size = float(c1[LOW]) - float(c3[HIGH])
         percentage = gap_size / float(c3[CLOSE]) if float(c3[CLOSE]) != 0 else 0
         weekday = pd.to_datetime(int(c3[TIMESTAMP]), unit='s').weekday()
 
-        vector = [float(candle_size), float(gap_size), float(percentage), int(weekday)]
-
         scaler = self.scalers[pattern]
-        scaled = scaler.transform(np.array([vector]))
-        scaled_prediction = self.models[pattern].predict(scaled)[0]
-        unscaled_prediction = scaler.inverse_transform([[scaled_prediction] + [0] * (len(vector) - 1)])[0][0]
+        candle_min, gap_min, pct_min = scaler.data_min_[:3]
+        candle_max, gap_max, pct_max = scaler.data_max_[:3]
+
+        # Manually scale features
+        scaled_candle = (candle_size - candle_min) / (candle_max - candle_min)
+        scaled_gap = (gap_size - gap_min) / (gap_max - gap_min)
+        scaled_pct = (percentage - pct_min) / (pct_max - pct_min)
+
+        vector = [scaled_candle, scaled_gap, scaled_pct, int(weekday)]
+
+        # Predict — no unscaling needed
+        prediction = self.models[pattern].predict([vector])[0]
 
         signal = self.setup.make_signal(
             pattern="fvg",
             direction="bearish",
-            prediction=unscaled_prediction,
+            prediction=prediction,
             current_price=float(c3[CLOSE]),
             candle=c3,
             timeframe="M15"
         )
         return signal
 
-    def _process_orderblock_or_engulfing(self, candles, pattern, noisy_day, is_highest_day, is_highest_week, session_code):
+    def _process_trigger(self, candles, pattern, noisy_day, is_highest_day, is_highest_week, session_code):
         c1, c2 = candles[-2], candles[-1]
 
         # Index mapping
@@ -94,40 +100,26 @@ class XAUUSD_M15_Processor:
         CLOSE = 4
 
         volume = float(c1[VOLUME]) + float(c2[VOLUME])
+        scaler = self.scalers[pattern]
+        volume_min = scaler.data_min_[0]
+        volume_max = scaler.data_max_[0]
+        target_min = scaler.data_min_[1]
+        target_max = scaler.data_max_[1]
+
+        scaled_volume = (volume - volume_min) / (volume_max - volume_min)
         weekday = pd.to_datetime(int(c2[TIMESTAMP]), unit='s').weekday()
 
         if pattern == "bullish engulfing":
-            vector = [
-                int(noisy_day),
-                int(is_highest_day),
-                int(is_highest_week),
-                float(volume),
-                int(session_code),
-                int(weekday)
-            ]
+            vector = [scaled_volume, int(noisy_day), int(is_highest_day), int(is_highest_week), int(session_code), int(weekday)]
         elif pattern == "bullish orderblock":
-            vector = [
-                int(noisy_day),
-                int(is_highest_day),
-                int(is_highest_week),
-                float(volume),
-                int(session_code)
-            ]
+            vector = [scaled_volume, int(noisy_day), int(is_highest_day), int(is_highest_week), int(session_code)]
         elif pattern == "bearish orderblock":
-            vector = [
-                int(noisy_day),
-                int(is_highest_week),
-                float(volume),
-                int(session_code),
-                int(weekday)
-            ]
+            vector = [scaled_volume, int(noisy_day), int(is_highest_week), int(session_code), int(weekday)]
         else:
             return "no_trade"
 
-        scaler = self.scalers[pattern]
-        scaled = scaler.transform(np.array([vector]))
-        scaled_prediction = self.models[pattern].predict(scaled)[0]
-        unscaled_prediction = scaler.inverse_transform([[scaled_prediction] + [0] * (len(vector) - 1)])[0][0]
+        scaled_prediction = self.models[pattern].predict([vector])[0]
+        unscaled_prediction = scaled_prediction * (target_max - target_min) + target_min
 
         signal = self.setup.make_signal(
             pattern="orderblock" if "orderblock" in pattern else "engulfing",

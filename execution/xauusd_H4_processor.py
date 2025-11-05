@@ -47,8 +47,7 @@ class XAUUSD_H4_Processor:
         highs = [float(c1[HIGH]), float(c2[HIGH]), float(c3[HIGH])]
         lows = [float(c1[LOW]), float(c2[LOW]), float(c3[LOW])]
 
-        candle_size = max(highs) - min(lows
-        )
+        candle_size = max(highs) - min(lows)
         gap_size = float(c1[LOW]) - float(c3[HIGH])
         percentage = gap_size / float(c3[CLOSE]) if float(c3[CLOSE]) != 0 else 0
 
@@ -56,17 +55,17 @@ class XAUUSD_H4_Processor:
         entry_weekday = int(entry_date)
         entry_session_code = int(entry_session)
 
-        vector = [
-            float(candle_size),
-            float(gap_size),
-            float(percentage),
-            int(weekday),
-            int(entry_weekday),
-            int(entry_session_code)
-        ]
+        # Manual scaling of input features
+        candle_min, gap_min, pct_min = self.scaler.data_min_[:3]
+        candle_max, gap_max, pct_max = self.scaler.data_max_[:3]
 
-        scaled = self.scaler.transform(np.array([vector]))
-        prediction = self.model.predict(scaled)[0]
+        scaled_candle = (candle_size - candle_min) / (candle_max - candle_min)
+        scaled_gap = (gap_size - gap_min) / (gap_max - gap_min)
+        scaled_pct = (percentage - pct_min) / (pct_max - pct_min)
+
+        vector = [scaled_candle, scaled_gap, scaled_pct, int(weekday), entry_weekday, entry_session_code]
+
+        prediction = self.model.predict([vector])[0]  # target is not scaled
 
         signal = self.setup.make_signal(
             pattern="fvg",

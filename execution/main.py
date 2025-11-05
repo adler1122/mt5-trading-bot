@@ -93,10 +93,13 @@ class FVGTracker:
             if not fvg["triggered"] and current_price > fvg["entry_price"]:
                 processor = processors.get(fvg["timeframe"])
                 if processor:
-                    signal = processor.process_trigger(
+                    entry_time = fvg["entry_time"]
+                    entry_date, entry_session = get_entry_context(entry_time)
+                    signal = processor.process_fvg_trigger(
                         candles=fvg["candles"],
-                        pattern="bearish fvg",
-                        session_code=get_entry_context(fvg["entry_time"])[1]
+                        entry_time=entry_time,
+                        entry_date=entry_date,
+                        entry_session=entry_session
                     )
                     fvg["triggered"] = True
                     results.append((fvg["timeframe"], signal))
@@ -106,7 +109,7 @@ class FVGTracker:
 def run_H4(symbol, processor, fvg_tracker):
     while True:
         candles = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_H4, 0, 4)
-        if candles and len(candles) >= 4:
+        if  len(candles) >= 4:
             candles = [tuple(map(float, c)) for c in candles[:3]]
             signal = processor.process_live_candles(candles)
             if signal != "no_trade":
@@ -120,7 +123,7 @@ def run_H4(symbol, processor, fvg_tracker):
 def run_H1(symbol, processor, noisy_tracker):
     while True:
         candles = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_H1, 0, 4)
-        if candles and len(candles) >= 4:
+        if  len(candles) >= 4:
             candles = [tuple(map(float, c)) for c in candles[:3]]
             live = processor.process_live_candles(candles)
             if live != "no_trade":
@@ -157,7 +160,7 @@ def run_H1(symbol, processor, noisy_tracker):
 def run_M30(symbol, processor, noisy_tracker):
     while True:
         candles = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_M30, 0, 4)
-        if candles and len(candles) >= 4:
+        if len(candles) >= 4:
             candles = [tuple(map(float, c)) for c in candles[:3]]
             live = processor.process_live_candles(candles)
             if live != "no_trade":
@@ -194,7 +197,7 @@ def run_M30(symbol, processor, noisy_tracker):
 def run_M15(symbol, processor, noisy_tracker, fvg_tracker):
     while True:
         candles = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_M15, 0, 4)
-        if candles and len(candles) >= 4:
+        if  len(candles) >= 4:
             candles = [tuple(map(float, c)) for c in candles[:3]]
             live = processor.process_live_candles(candles)
             if live != "no_trade":

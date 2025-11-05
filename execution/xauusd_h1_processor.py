@@ -61,28 +61,25 @@ class XAUUSD_H1_Processor:
         volume = float(c1[VOLUME]) + float(c2[VOLUME])
         scaler = self.scalers[direction]
 
+        # Extract direction-specific min/max
+        volume_min = scaler.data_min_[0]
+        volume_max = scaler.data_max_[0]
+        target_min = scaler.data_min_[1]
+        target_max = scaler.data_max_[1]
+
+        # Manually scale volume
+        scaled_volume = (volume - volume_min) / (volume_max - volume_min)
+
+        # Build vector
         if direction == "bullish":
             weekday = pd.to_datetime(int(c2[TIMESTAMP]), unit='s').weekday()
-            vector = [
-                int(noisy_day),
-                int(is_highest_day),
-                int(is_highest_week),
-                float(volume),
-                int(session_code),
-                int(weekday)
-            ]
-        else:  # bearish
-            vector = [
-                int(noisy_day),
-                int(is_highest_day),
-                int(is_highest_week),
-                float(volume),
-                int(session_code)
-            ]
+            vector = [scaled_volume, int(noisy_day), int(is_highest_day), int(is_highest_week), int(session_code), int(weekday)]
+        else:
+            vector = [scaled_volume, int(noisy_day), int(is_highest_day), int(is_highest_week), int(session_code)]
 
-        scaled = scaler.transform(np.array([vector]))
-        scaled_prediction = self.models[direction].predict(scaled)[0]
-        unscaled_prediction = scaler.inverse_transform([[scaled_prediction] + [0] * (len(vector) - 1)])[0][0]
+        # Predict and unscale
+        scaled_prediction = self.models[direction].predict([vector])[0]
+        unscaled_prediction = scaled_prediction * (target_max - target_min) + target_min
 
         signal = self.setup.make_signal(
             pattern="orderblock",
