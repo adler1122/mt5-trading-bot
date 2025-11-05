@@ -30,12 +30,10 @@ class XAUUSD_H4_Processor:
                 "entry_price": entry_price,
                 "candles": candles[-3:]
             }
-        return "no_trade"
+        return "no pattern detected"
 
     def process_fvg_trigger(self, candles, entry_time, entry_date, entry_session):
-        if self.model is None or self.scaler is None:
-            return "no_trade"
-
+        
         c1, c2, c3 = candles[-3], candles[-2], candles[-1]
 
         # Index mapping

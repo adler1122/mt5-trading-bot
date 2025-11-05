@@ -47,11 +47,11 @@ class SetupMaker:
             tp = entry - prediction
 
         else:
-            return "no_trade"
+            return "no registered pattern"
 
         # R:R check
         if abs(tp - entry) <= abs(sl - entry):
-            return "no_trade"
+            return "no trade bad r:r"
 
         return {
             "pattern": pattern,

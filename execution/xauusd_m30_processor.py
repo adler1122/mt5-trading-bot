@@ -42,14 +42,10 @@ class XAUUSD_M30_Processor:
                 "direction": direction,
                 "candles": candles[-2:]
             }
-        return "no_trade"
+        return "no pattern detected"
 
     def process_orderblock_trigger(self, candles, noisy_day, is_highest_day, is_highest_week, session_code, direction):
-        if len(candles) < 2:
-            return "no_trade"
 
-        if direction not in self.models or direction not in self.scalers:
-            return "no_trade"
 
         c1, c2 = candles[-2], candles[-1]
 

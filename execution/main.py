@@ -47,7 +47,7 @@ def get_last_weekly_candle(symbol):
     return tuple(map(float, rates[0])) if rates else None
 
 def get_entry_context(timestamp):
-    dt = datetime.fromtimestamp(int(timestamp)) + timedelta(hours=BROKER_OFFSET)
+    dt = datetime.fromtimestamp(timestamp) + timedelta(hours=BROKER_OFFSET)
     hour = dt.hour
     if 0 <= hour < 9: session = "Tokyo"
     elif 9 <= hour < 14: session = "London"
@@ -125,7 +125,7 @@ def run_H4(symbol, processor, fvg_tracker):
         if  len(candles) >= 4:
             candles = [tuple(map(float, c)) for c in candles[:3]]
             signal = processor.process_live_candles(candles)
-            if signal != "no_trade":
+            if signal != "no_trade" and signal!="no pattern detected":
                 entry_price = float(candles[-1][4])
                 fvg_tracker.add_fvg("H4", candles, entry_price)
                 print("FVG registered at H4")
@@ -139,7 +139,7 @@ def run_H1(symbol, processor, noisy_tracker):
         if  len(candles) >= 4:
             candles = [tuple(map(float, c)) for c in candles[:3]]
             live = processor.process_live_candles(candles)
-            if live != "no_trade":
+            if live != "no_trade" and live!="no pattern detected":
                 direction = live["direction"]
                 c2 = live["candles"][-1]
                 session_code = get_entry_context(c2[0])[1]
@@ -176,7 +176,7 @@ def run_M30(symbol, processor, noisy_tracker):
         if len(candles) >= 4:
             candles = [tuple(map(float, c)) for c in candles[:3]]
             live = processor.process_live_candles(candles)
-            if live != "no_trade":
+            if live != "no_trade" and live!="no pattern detected":
                 direction = live["direction"]
                 c2 = live["candles"][-1]
                 session_code = get_entry_context(c2[0])[1]
@@ -213,7 +213,7 @@ def run_M15(symbol, processor, noisy_tracker, fvg_tracker):
         if  len(candles) >= 4:
             candles = [tuple(map(float, c)) for c in candles[:3]]
             live = processor.process_live_candles(candles)
-            if live != "no_trade":
+            if live != "no_trade" and live!="no pattern detected":
                 pattern = live["pattern"]
                 last_candle = live["candles"][-1]
                 session_code = get_entry_context(last_candle[0])[1]
@@ -260,8 +260,9 @@ def run_fvg_tracker_loop(fvg_tracker, processors, symbol):
         
 
 def execute_trade(signal):
-    if signal == "no_trade" or not isinstance(signal, dict):
+    if signal == "no trade bad r:r" or signal=="no registered pattern" or not isinstance(signal, dict):
         print("No valid signal to execute.")
+        
         return
 
     symbol = "XAUUSD"
@@ -280,7 +281,7 @@ def execute_trade(signal):
         return
 
     order_type = mt5.ORDER_TYPE_BUY if signal["order_type"] == "buy" else mt5.ORDER_TYPE_SELL
-    entry_price = get_current_price()
+    entry_price = get_current_price(symbol=symbol)
     tp = signal["tp"]
     sl = signal["sl"]
     direction = signal["direction"]

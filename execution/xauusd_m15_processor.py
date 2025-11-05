@@ -42,12 +42,10 @@ class XAUUSD_M15_Processor:
                 "pattern": result,
                 "candles": candles[-3:] if result == "bearish fvg" else candles[-2:]
             }
-        return "no_trade"
+        return "no pattern detected"
 
     def process_trigger(self, candles, pattern, noisy_day=None, is_highest_day=None, is_highest_week=None, session_code=None):
-        if pattern not in self.models or pattern not in self.scalers:
-            return "no_trade"
-
+        
         if pattern == "bearish fvg":
             return self._process_fvg(candles, pattern)
 
