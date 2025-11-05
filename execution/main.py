@@ -316,3 +316,4 @@ def start_engine(symbol):
 
 if __name__ == "__main__":
     start_engine("XAUUSD")
+    print("TT")
