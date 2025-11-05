@@ -1,6 +1,6 @@
 """
 
-run this a few second after market open
+run this a few second after a 4h candle closes
 
 """
 
@@ -13,6 +13,9 @@ from xauusd_H1_processor import XAUUSD_H1_Processor
 from xauusd_M30_processor import XAUUSD_M30_Processor
 from xauusd_H4_processor import XAUUSD_H4_Processor
 from xauusd_M15_processor import XAUUSD_M15_Processor
+from datetime import datetime, timedelta
+
+
 
 # Constants
 BROKER_OFFSET = -2
@@ -53,22 +56,32 @@ def get_entry_context(timestamp):
     return dt.weekday(), session_map.get(session, -1)
 
 # Noisy day tracker
+
+
 class NoisyDayTracker:
     def __init__(self, symbol):
         self.symbol = symbol
         self.noisy_day = False
         self.last_evaluation_time = None
+        self.market_open_hour = 1  # broker time
+        self.evaluation_hour = 5   # 4 hours after market open
 
     def update(self):
         now = datetime.now() + timedelta(hours=BROKER_OFFSET)
-        if self.last_evaluation_time and now - self.last_evaluation_time > timedelta(hours=20):
+        current_hour = now.hour
+
+        # Reset after 20 hours from last evaluation
+        if self.last_evaluation_time and now - self.last_evaluation_time >= timedelta(hours=20):
             self.noisy_day = False
             self.last_evaluation_time = None
 
-        if self.last_evaluation_time is None and now.hour >= 6:
+        # If no evaluation yet today and it's time to evaluate
+        if self.last_evaluation_time is None and current_hour == self.evaluation_hour:
             candle = get_last_daily_candle(self.symbol)
-            self.noisy_day = candle and float(candle[5]) > NOISY_THRESHOLD
-            self.last_evaluation_time = now
+            if candle:
+                volume = float(candle[5])
+                self.noisy_day = volume > NOISY_THRESHOLD
+                self.last_evaluation_time = now
 
         return self.noisy_day
 
@@ -260,14 +273,14 @@ def execute_trade(signal):
         return
 
     balance = account_info.balance
-    volume = (balance // 100) * 0.01  # dynamic volume
+    volume = max((balance // 100) * 0.01 , 0.01)  # dynamic volume
 
     if volume <= 0:
         print("Calculated volume is zero. Check account balance.")
         return
 
-    order_type = signal["order_type"]
-    entry_price = signal["entry"]
+    order_type = mt5.ORDER_TYPE_BUY if signal["order_type"] == "buy" else mt5.ORDER_TYPE_SELL
+    entry_price = get_current_price()
     tp = signal["tp"]
     sl = signal["sl"]
     direction = signal["direction"]
@@ -282,13 +295,14 @@ def execute_trade(signal):
         "price": entry_price,
         "sl": sl,
         "tp": tp,
-        "deviation": 10,
+        "deviation": 100,
         "magic": 123456,
         "comment": f"{pattern} {direction} {timeframe}",
         "type_time": mt5.ORDER_TIME_GTC,
         "type_filling": mt5.ORDER_FILLING_IOC
     }
-
+    if (signal["order_type"]=="buy" and not sl <= entry_price <= tp  )or (signal["order_type"]=="sell" and not tp <= entry_price <= sl) :  
+        print ("price is not in the entry range")
     result = mt5.order_send(request)
     if result.retcode != mt5.TRADE_RETCODE_DONE:
         print(f"Trade failed: {result.retcode} - {result.comment}")
