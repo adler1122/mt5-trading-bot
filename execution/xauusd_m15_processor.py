@@ -108,11 +108,11 @@ class XAUUSD_M15_Processor:
         weekday = pd.to_datetime(int(c2[TIMESTAMP]), unit='s').weekday()
 
         if pattern == "bullish engulfing":
-            vector = [scaled_volume, int(noisy_day), int(is_highest_day), int(is_highest_week), int(session_code), int(weekday)]
+            vector = [ int(noisy_day), int(is_highest_day), int(is_highest_week),scaled_volume, int(session_code), int(weekday)]
         elif pattern == "bullish orderblock":
-            vector = [scaled_volume, int(noisy_day), int(is_highest_day), int(is_highest_week), int(session_code)]
-        elif pattern == "bearish orderblock":
-            vector = [scaled_volume, int(noisy_day), int(is_highest_week), int(session_code), int(weekday)]
+            vector = [ int(noisy_day), int(is_highest_day), int(is_highest_week),scaled_volume, int(session_code),int(weekday)]
+        elif pattern == "bearish ord erblock":
+            vector = [ int(noisy_day), int(is_highest_day),int(is_highest_week),scaled_volume, int(session_code)]
         else:
             return "no_trade"
 

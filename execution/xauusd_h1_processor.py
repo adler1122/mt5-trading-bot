@@ -67,11 +67,11 @@ class XAUUSD_H1_Processor:
         scaled_volume = (volume - volume_min) / (volume_max - volume_min)
 
         # Build vector
-        if direction == "bullish":
+        if direction == "bul lish":
             weekday = pd.to_datetime(int(c2[TIMESTAMP]), unit='s').weekday()
-            vector = [scaled_volume, int(noisy_day), int(is_highest_day), int(is_highest_week), int(session_code), int(weekday)]
+            vector = [int(noisy_day), int(is_highest_day), int(is_highest_week),scaled_volume, int(session_code), int(weekday)]
         else:
-            vector = [scaled_volume, int(noisy_day), int(is_highest_day), int(is_highest_week), int(session_code)]
+            vector = [int(noisy_day), int(is_highest_day), int(is_highest_week), scaled_volume, int(session_code)]
 
         # Predict and unscale
         scaled_prediction = self.models[direction].predict([vector])[0]

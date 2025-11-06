@@ -69,9 +69,9 @@ class XAUUSD_M30_Processor:
 
         # Build vector
         if direction == "bullish":
-            vector = [scaled_volume, int(noisy_day), int(is_highest_day), int(is_highest_week), int(session_code)]
+            vector = [ int(noisy_day), int(is_highest_day), int(is_highest_week), scaled_volume, int(session_code)]
         else:
-            vector = [scaled_volume, int(noisy_day), int(is_highest_day), int(is_highest_week), int(session_code), int(weekday)]
+            vector = [int(noisy_day), int(is_highest_day), int(is_highest_week), scaled_volume, int(session_code), int(weekday)]
 
         # Predict and unscale
         scaled_prediction = self.models[direction].predict([vector])[0]
