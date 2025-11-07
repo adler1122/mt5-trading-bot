@@ -67,7 +67,7 @@ class XAUUSD_H1_Processor:
         scaled_volume = (volume - volume_min) / (volume_max - volume_min)
 
         # Build vector
-        if direction == "bul lish":
+        if direction == "bullish":
             weekday = pd.to_datetime(int(c2[TIMESTAMP]), unit='s').weekday()
             vector = [int(noisy_day), int(is_highest_day), int(is_highest_week),scaled_volume, int(session_code), int(weekday)]
         else:

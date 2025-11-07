@@ -19,7 +19,7 @@ from datetime import datetime, timedelta
 
 # Constants
 BROKER_OFFSET = -2
-NOISY_THRESHOLD = 11450
+NOISY_THRESHOLD = 15863
 symbol = "XAUUSD"
 
 session_map = {
@@ -108,7 +108,7 @@ class FVGTracker:
                 if processor:
                     entry_time = fvg["entry_time"]
                     entry_date, entry_session = get_entry_context(entry_time)
-                    signal = processor.process_fvg_trigger(
+                    signal = processor.process_trigger(
                         candles=fvg["candles"],
                         entry_time=entry_time,
                         entry_date=entry_date,

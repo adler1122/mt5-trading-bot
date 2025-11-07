@@ -32,7 +32,7 @@ class XAUUSD_H4_Processor:
             }
         return "no pattern detected"
 
-    def process_fvg_trigger(self, candles, entry_time, entry_date, entry_session):
+    def process_trigger(self, candles, entry_time, entry_date, entry_session):
         
         c1, c2, c3 = candles[-3], candles[-2], candles[-1]
 
