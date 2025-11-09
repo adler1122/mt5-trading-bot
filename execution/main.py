@@ -110,7 +110,6 @@ class FVGTracker:
                     entry_date, entry_session = get_entry_context(entry_time)
                     signal = processor.process_trigger(
                         candles=fvg["candles"],
-                        entry_time=entry_time,
                         entry_date=entry_date,
                         entry_session=entry_session
                     )
