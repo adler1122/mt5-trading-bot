@@ -26,13 +26,13 @@ class XAUUSD_H4_Processor:
         if result == "bearish fvg":
             entry_price = float(candles[-1][2])  # c3 high
             return {
-                "fvg": True,
+                "pattern": "bearish fvg",
                 "entry_price": entry_price,
-                "candles": candles[-3:]
+                "candles": candles
             }
         return "no pattern detected"
 
-    def process_trigger(self, candles, entry_date, entry_session):
+    def process_trigger(self, candles,pattern=None,noisy_day=None, entry_date=None, entry_session=None):
         
         c1, c2, c3 = candles[-3], candles[-2], candles[-1]
 
@@ -70,7 +70,7 @@ class XAUUSD_H4_Processor:
             direction="bearish",
             prediction=prediction,
             current_price=float(c3[CLOSE]),
-            candle=c3,
+            candle=candles,
             timeframe="H4"
         )
         return signal

@@ -5,7 +5,7 @@ class SetupMaker:
     def make_signal(self, pattern, direction, prediction, current_price, candle, timeframe):
         entry = float(current_price)
 
-        if pattern == "fvg":
+        if pattern == "bearish fvg":
             gap = abs(float(candle[3]) - float(candle[2]))  # low - high
 
             # Classification-based order type logic
@@ -31,11 +31,11 @@ class SetupMaker:
                 "tp": round(tp, 2),
                 "sl": round(sl, 2),
                 "timeframe": timeframe,
-                "candle": candle
+                "candles": candle
             }
 
         # Regression-based setups
-        c1, c2 = candle[0], candle[1]  # candle is [c1, c2]
+        c1, c2 = candle[1], candle[2]  # candle is [c0,c1, c2]
         order_type = "buy" if direction == "bullish" else "sell"
 
         if pattern == "bullish orderblock" or pattern == "bullish engulfing":

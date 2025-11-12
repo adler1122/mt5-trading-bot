@@ -38,13 +38,15 @@ class XAUUSD_M15_Processor:
     def process_live_candles(self, candles):
         result = self.detector.detect(candles)
         if result in self.models:
+            direction = result.split()[0]
             return {
+                "direction": direction ,
                 "pattern": result,
-                "candles": candles[-3:] if result == "bearish fvg" else candles[-2:]
+                "candles": candles
             }
         return "no pattern detected"
 
-    def process_trigger(self, candles, pattern, noisy_day=None, is_highest_day=None, is_highest_week=None, session_code=None):
+    def process_trigger(self, candles, pattern, noisy_day=None, is_highest_day=None, is_highest_week=None, entry_date=None,session_code=None):
         
         if pattern == "bearish fvg":
             return self._process_fvg(candles, pattern)
@@ -120,11 +122,11 @@ class XAUUSD_M15_Processor:
         unscaled_prediction = scaled_prediction * (target_max - target_min) + target_min
 
         signal = self.setup.make_signal(
-            pattern="orderblock" if "orderblock" in pattern else "engulfing",
+            pattern=pattern,
             direction=pattern.split()[0],
             prediction=unscaled_prediction,
             current_price=float(c2[CLOSE]),
-            candle=c2,
+            candle=candles,
             timeframe="M15"
         )
         return signal

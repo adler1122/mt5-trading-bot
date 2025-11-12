@@ -40,11 +40,11 @@ class XAUUSD_M30_Processor:
             return {
                 "pattern": "orderblock",
                 "direction": direction,
-                "candles": candles[-2:]
+                "candles": candles
             }
         return "no pattern detected"
 
-    def process_orderblock_trigger(self, candles, noisy_day, is_highest_day, is_highest_week, session_code, direction):
+    def process_trigger(self, candles, noisy_day, is_highest_day, is_highest_week, session_code, direction):
 
 
         c1, c2 = candles[-2], candles[-1]
@@ -78,11 +78,11 @@ class XAUUSD_M30_Processor:
         unscaled_prediction = scaled_prediction * (target_max - target_min) + target_min
 
         signal = self.setup.make_signal(
-            pattern="orderblock",
+            pattern=f"{direction} orderblock",
             direction=direction,
             prediction=unscaled_prediction,
             current_price=float(c2[CLOSE]),
-            candle=c2,
+            candle=candles,
             timeframe="M30"
         )
         return signal
