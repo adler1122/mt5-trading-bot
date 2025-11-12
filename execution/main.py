@@ -19,7 +19,7 @@ from datetime import datetime, timedelta
 
 # Constants
 BROKER_OFFSET = -2
-NOISY_THRESHOLD = 15863
+NOISY_THRESHOLD = 11450
 symbol = "XAUUSD"
 
 session_map = {
@@ -47,12 +47,16 @@ def get_last_weekly_candle(symbol):
     return tuple(map(float, rates[0])) if rates else None
 
 def get_entry_context(timestamp):
-    dt = datetime.fromtimestamp(timestamp) + timedelta(hours=BROKER_OFFSET)
+    dt = datetime.fromtimestamp(timestamp)+ timedelta(hours=BROKER_OFFSET)
     hour = dt.hour
-    if 0 <= hour < 9: session = "Tokyo"
-    elif 9 <= hour < 14: session = "London"
-    elif 14 <= hour < 21: session = "New York"
-    else: session = "Sydney"
+    if 0 <= hour < 9:
+        session = "Tokyo"
+    elif 9 <= hour < 14:
+        session = "London"
+    elif 14 <= hour < 21:
+        session = "New York"
+    else:
+        session = "Sydney"
     return dt.weekday(), session_map.get(session, -1)
 
 # Noisy day tracker
@@ -121,6 +125,7 @@ class FVGTracker:
 def run_H4(symbol, processor, fvg_tracker):
     while True:
         candles = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_H4, 0, 4)
+        
         if  len(candles) >= 4:
             candles = [tuple(map(float, c)) for c in candles[:3]]
             signal = processor.process_live_candles(candles)
@@ -155,7 +160,7 @@ def run_H1(symbol, processor, noisy_tracker):
                     min_low = min(lows)
                     is_highest_day = min_low <= daily[3]
                     is_highest_week = min_low <= weekly[3]
-                signal = processor.process_orderblock_trigger(
+                signal = processor.process_trigger(
                     candles=live["candles"],
                     noisy_day=noisy_day,
                     is_highest_day=is_highest_day,
@@ -192,7 +197,7 @@ def run_M30(symbol, processor, noisy_tracker):
                     min_low = min(lows)
                     is_highest_day = min_low <= daily[3]
                     is_highest_week = min_low <= weekly[3]
-                signal = processor.process_orderblock_trigger(
+                signal = processor.process_trigger(
                     candles=live["candles"],
                     noisy_day=noisy_day,
                     is_highest_day=is_highest_day,
@@ -333,4 +338,4 @@ def start_engine(symbol):
 
 if __name__ == "__main__":
     start_engine("XAUUSD")
-    print("TT")
+    
