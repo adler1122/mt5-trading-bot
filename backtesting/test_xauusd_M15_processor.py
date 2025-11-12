@@ -14,7 +14,7 @@ class XAUUSD_M15_Processor:
             "bearish fvg": "models/xauusd_fvg_bearish_M15_KNN.pkl",
             "bullish engulfing": "models/xauusd_engulfing_bullish_M15_SVR.pkl",
             "bullish orderblock": "models/xauusd_orderblock_bullish_M15_SVR.pkl",
-            "bearish orderblock": "models/xauusd_orderblock_bearish_M15_GradientBoosting.pkl"
+            "bearish orderblock": "models/xauusd_orderblock_bearish_M15_RandomForest.pkl"
         }
 
         self.scaler_paths = {

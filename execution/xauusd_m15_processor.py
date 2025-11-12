@@ -14,7 +14,7 @@ class XAUUSD_M15_Processor:
             "bearish fvg": "models/xauusd_fvg_bearish_M15_KNN.pkl",
             "bullish engulfing": "models/xauusd_engulfing_bullish_M15_SVR.pkl",
             "bullish orderblock": "models/xauusd_orderblock_bullish_M15_SVR.pkl",
-            "bearish orderblock": "models/xauusd_orderblock_bearish_M15_SVR.pkl"
+            "bearish orderblock": "models/xauusd_orderblock_bearish_M15_RandomForest.pkl"
         }
 
         self.scaler_paths = {
@@ -101,10 +101,12 @@ class XAUUSD_M15_Processor:
 
         volume = float(c1[VOLUME]) + float(c2[VOLUME])
         scaler = self.scalers[pattern]
-        volume_min = scaler.data_min_[0]
-        volume_max = scaler.data_max_[0]
-        target_min = scaler.data_min_[1]
-        target_max = scaler.data_max_[1]
+        volume_index =list(scaler.feature_names_in_).index("volume")
+        volume_min = scaler.data_min_[volume_index]
+        volume_max = scaler.data_max_[volume_index]
+        target_index =list(scaler.feature_names_in_).index("target")
+        target_min = scaler.data_min_[target_index]
+        target_max = scaler.data_max_[target_index]
 
         scaled_volume = (volume - volume_min) / (volume_max - volume_min)
         weekday = pd.to_datetime(int(c2[TIMESTAMP]), unit='s').weekday()
@@ -119,12 +121,12 @@ class XAUUSD_M15_Processor:
             return "no_trade"
 
         scaled_prediction = self.models[pattern].predict([vector])[0]
-        unscaled_prediction = scaled_prediction * (target_max - target_min) + target_min
+        #unscaled_prediction = scaled_prediction * (target_max - target_min) + target_min
 
         signal = self.setup.make_signal(
             pattern=pattern,
             direction=pattern.split()[0],
-            prediction=unscaled_prediction,
+            prediction=scaled_prediction,
             current_price=float(c2[CLOSE]),
             candle=candles,
             timeframe="M15"

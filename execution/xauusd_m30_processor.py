@@ -59,10 +59,12 @@ class XAUUSD_M30_Processor:
 
         # Extract direction-specific min/max
         scaler = self.scalers[direction]
-        volume_min = scaler.data_min_[0]
-        volume_max = scaler.data_max_[0]
-        target_min = scaler.data_min_[1]
-        target_max = scaler.data_max_[1]
+        volume_index =list(scaler.feature_names_in_).index("volume")
+        volume_min = scaler.data_min_[volume_index]
+        volume_max = scaler.data_max_[volume_index]
+        target_index =list(scaler.feature_names_in_).index("target")
+        target_min = scaler.data_min_[target_index]
+        target_max = scaler.data_max_[target_index]
 
         # Manually scale volume
         scaled_volume = (volume - volume_min) / (volume_max - volume_min)
@@ -80,7 +82,7 @@ class XAUUSD_M30_Processor:
         signal = self.setup.make_signal(
             pattern=f"{direction} orderblock",
             direction=direction,
-            prediction=unscaled_prediction,
+            prediction=scaled_prediction,
             current_price=float(c2[CLOSE]),
             candle=candles,
             timeframe="M30"

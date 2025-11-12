@@ -11,7 +11,7 @@ class XAUUSD_H1_Processor:
         self.setup = SetupMaker()
 
         self.model_paths = {
-            "bullish": "models/xauusd_orderblock_bullish_H1_SVR.pkl",
+            "bullish": "models/xauusd_orderblock_bullish_H1_GradientBoosting.pkl",
             "bearish": "models/xauusd_orderblock_bearish_H1_SVR.pkl"
         }
         self.scaler_paths = {
@@ -58,10 +58,13 @@ class XAUUSD_H1_Processor:
         scaler = self.scalers[direction]
 
         # Extract direction-specific min/max
-        volume_min = scaler.data_min_[0]
-        volume_max = scaler.data_max_[0]
-        target_min = scaler.data_min_[1]
-        target_max = scaler.data_max_[1]
+        volume_index =list(scaler.feature_names_in_).index("volume")
+        volume_min = scaler.data_min_[volume_index]
+        volume_max = scaler.data_max_[volume_index]
+        target_index =list(scaler.feature_names_in_).index("target")
+        target_min = scaler.data_min_[target_index]
+        target_max = scaler.data_max_[target_index]
+
 
         # Manually scale volume
         scaled_volume = (volume - volume_min) / (volume_max - volume_min)
@@ -74,13 +77,13 @@ class XAUUSD_H1_Processor:
             vector = [int(noisy_day), int(is_highest_day), int(is_highest_week), scaled_volume, int(session_code)]
 
         # Predict and unscale
-        scaled_prediction = self.models[direction].predict([vector])[0]
-        unscaled_prediction = scaled_prediction * (target_max - target_min) + target_min
+        scaled_prediction = float(self.models[direction].predict([vector]))
+        #unscaled_prediction = scaled_prediction * (target_max - target_min) + target_min
 
         signal = self.setup.make_signal(
             pattern=f"{direction} orderblock",
             direction=direction,
-            prediction=unscaled_prediction,
+            prediction=scaled_prediction,
             current_price=float(c2[CLOSE]),
             candle=candles,
             timeframe="H1"
