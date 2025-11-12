@@ -7,6 +7,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.svm import SVR
 from xgboost import XGBRegressor
+from sklearn.metrics import mean_squared_error
 
 # Inputs
 symbol = input("Enter symbol (e.g., eurusd): ").lower()
@@ -56,7 +57,7 @@ for filename in os.listdir(base_path):
         target_min = scaler.data_min_[target_index]
         target_max = scaler.data_max_[target_index]
         target_scaled = df["target"].values
-        target_unscaled = target_scaled * (target_max - target_min) + target_min
+        target_unscaled = (target_scaled  * (target_max - target_min) ) + target_min
     except Exception as e:
         print(f"Error unscaling target in {filename}: {e}")
         continue
@@ -69,7 +70,7 @@ for filename in os.listdir(base_path):
     X_train, X_test = X.iloc[:split_idx], X.iloc[split_idx:]
     y_train, y_test = y[:split_idx], y[split_idx:]
 
-    best_score = -float("inf")
+    best_mse= float("inf")
     best_model = None
     best_name = None
     accurate_found = False
@@ -78,29 +79,25 @@ for filename in os.listdir(base_path):
         model.fit(X_train, y_train)
         preds = model.predict(X_test)
 
-        # Profit-based scoring and TP count
-        profit = 0
+        # TP logic
         tp_count = 0
         for pred, true in zip(preds, y_test):
-            if pred < true:
-                profit += pred
+            if  pred < true: # underestimate 
+                                    
                 tp_count += 1
-            else:
-                profit -= pred
 
-        total = len(y_test)
-        tp_ratio = tp_count / total
+        tp_ratio = tp_count / len(y_test)
+        mse = mean_squared_error(y_test, preds)
 
-        if profit <= 0 or tp_ratio <= 0.5:
-            print(f"{filename} — {name}: Skipped (Profit={profit:.2f}, TP Ratio={tp_ratio:.2f})")
+        if tp_ratio <= 0.5:
+            print(f"{filename} — {name}: Skipped (TP Ratio={tp_ratio:.2f}, MSE={mse:.2f})")
             continue
 
-        score = profit
-        print(f"{filename} — {name}: Net Profit = {score:.2f}, TP Count = {tp_count}/{total}")
-
+        print(f"{filename} — {name}: TP Ratio = {tp_ratio:.2f}, MSE = {mse:.2f}")
         accurate_found = True
-        if score > best_score:
-            best_score = score
+
+        if mse < best_mse:
+            best_mse = mse
             best_model = model
             best_name = name
 
@@ -108,6 +105,6 @@ for filename in os.listdir(base_path):
     if accurate_found and best_model:
         model_filename = f"{symbol}_{pattern}_{direction}_{timeframe}_{best_name}.pkl"
         joblib.dump(best_model, model_filename)
-        print(f"Saved best model: {model_filename}")
+        print(f" Saved best model: {model_filename}")
     else:
         print(f"No accurate model found for {direction.upper()} {timeframe}")
