@@ -38,13 +38,12 @@ def simulate_tp_sl(signal, future_candles,commission):
 
     for candle in future_candles:
         high, low = candle[2], candle[3]
-        if order_type=="buy":
-            
-            if high >= tp: return "TP"
-            if low <= sl: return "SL"
+        if order_type=="buy":      
+            if high >= tp : return "TP"
+            if low <= sl : return "SL"
         else:
-            if low <= tp: return "TP"
-            if high >= sl: return "SL"
+            if low <= tp : return "TP"
+            if high >= sl : return "SL"
 
     return "open"  # trade never resolved
 
@@ -91,7 +90,14 @@ class FVGTracker:
         return triggered_signals
 
 def execute_trade(signal, entry_price, balance, ledger, balance_history, future_candles):
-    volume = max((balance // 100) * 0.01, 0.01)
+    loss=abs(signal["sl"] - signal["entry"]) # e.g 5
+    risk_percentage=0
+    if signal["timeframe"] in ["M30","H1"] :
+        risk_percentage = 0.003
+    else : 
+        risk_percentage = 0.001
+    risk = risk_percentage * balance # e.g 12
+    volume = max((risk // loss) * 0.01, 0.01) # e.g 0.02
     if signal["order_type"] == "buy" and not signal["sl"] <= entry_price <= signal["tp"]:
         return balance
     if signal["order_type"] == "sell" and not signal["tp"] <= entry_price <= signal["sl"]:
@@ -242,7 +248,7 @@ def visualize(trades, balance_history, label):
         print(pd.concat([summary, total_row]))
 
 if __name__ == "__main__":
-    start_date = datetime(2024, 12, 30)
+    start_date = datetime(2025, 1, 30)
     def load(path):
         df = pd.read_csv(path)
         df['time'] = pd.to_datetime(df['time'])

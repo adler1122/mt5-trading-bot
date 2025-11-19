@@ -30,4 +30,4 @@ def fetch_and_save(symbol, start_date, bars=10000):
 
 # Example usage
 symbol_input = input("Enter symbol (e.g., XAUUSD): ").strip().upper()
-fetch_and_save(symbol_input, datetime(2025, 5, 31))
+fetch_and_save(symbol_input, datetime(2025, 10,19))

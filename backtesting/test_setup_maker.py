@@ -31,7 +31,8 @@ class SetupMaker:
                 "tp": round(tp, 2),
                 "sl": round(sl, 2),
                 "timeframe": timeframe,
-                "candles": candle
+                "candles": candle,
+                "entry": candle[2][4]
             }
 
         # Regression-based setups
