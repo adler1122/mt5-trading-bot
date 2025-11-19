@@ -36,15 +36,15 @@ class PatternDetector:
         ):
             return "bearish orderblock"
 
-        # Bullish Engulfing
-        #body1 = abs(c2["close"] - c2["open"])
-        #if (
-        #    c2["close"] > c2["open"] and
-        #    c3["close"] < c3["open"] and
-        #    c3["open"] > c2["close"] - 0.1 * body1 and
-        #    c3["close"] < c2["open"] + 0.1 * body1
-        #):
-        #    return "bullish engulfing"
+        #Bullish Engulfing
+        body1 = abs(c2["close"] - c2["open"])
+        if (
+            c2["close"] > c2["open"] and
+            c3["close"] < c3["open"] and
+            c3["open"] > c2["close"] - 0.1 * body1 and
+            c3["close"] < c2["open"] + 0.1 * body1
+        ):
+            return "bullish engulfing"
 
         return "no_trade"
 

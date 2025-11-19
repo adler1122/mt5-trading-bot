@@ -11,7 +11,7 @@ class XAUUSD_H1_Processor:
         self.setup = SetupMaker()
 
         self.model_paths = {
-            "bullish": "models/xauusd_orderblock_bullish_H1_GradientBoosting.pkl",
+            "bullish": "models/xauusd_orderblock_bullish_H1_SVR.pkl",
             "bearish": "models/xauusd_orderblock_bearish_H1_SVR.pkl"
         }
         self.scaler_paths = {

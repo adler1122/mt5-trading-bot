@@ -14,7 +14,7 @@ class XAUUSD_M15_Processor:
             "bearish fvg": "models/xauusd_fvg_bearish_M15_KNN.pkl",
             "bullish engulfing": "models/xauusd_engulfing_bullish_M15_SVR.pkl",
             "bullish orderblock": "models/xauusd_orderblock_bullish_M15_SVR.pkl",
-            "bearish orderblock": "models/xauusd_orderblock_bearish_M15_RandomForest.pkl"
+            "bearish orderblock": "models/xauusd_orderblock_bearish_M15_SVR.pkl"
         }
 
         self.scaler_paths = {
@@ -39,11 +39,12 @@ class XAUUSD_M15_Processor:
         result = self.detector.detect(candles)
         if result in self.models:
             direction = result.split()[0]
-            return {
-                "direction": direction ,
-                "pattern": result,
-                "candles": candles
-            }
+            if result != "bearish orderblock":
+                return {
+                    "direction": direction ,
+                    "pattern": result,
+                    "candles": candles
+                }
         return "no pattern detected"
 
     def process_trigger(self, candles, pattern, noisy_day=None, is_highest_day=None, is_highest_week=None, entry_date=None,session_code=None):

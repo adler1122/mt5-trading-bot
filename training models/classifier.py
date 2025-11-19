@@ -72,7 +72,8 @@ for filename in os.listdir(base_path):
         score = 0
         if total_pos > 0 and total_neg > 0:
             score = (tp / total_pos) * (tn / total_neg)
-
+            #score= (tp / total_pos) + (tn / total_neg)  
+        #if score >= 1.0:
         print(f"{filename} — {name}: TP={tp}, TN={tn}, Score={round(score, 4)}")
 
         results[(direction, timeframe)].append({
@@ -82,7 +83,7 @@ for filename in os.listdir(base_path):
             "tn": tn
         })
 
-        if score > 0.25:
+        if score > 0.25 :
             accurate_found = True
             if score > best_score:
                 best_score = score
@@ -96,4 +97,3 @@ for filename in os.listdir(base_path):
         print(f" Saved best model: {model_filename}")
     else:
         print(f"No accurate model found for {direction.upper()} {timeframe}")
-
