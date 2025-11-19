@@ -278,11 +278,6 @@ def execute_trade(signal):
         return
 
     balance = account_info.balance
-    volume = max((balance // 100) * 0.01 , 0.01)  # dynamic volume
-
-    if volume <= 0:
-        print("Calculated volume is zero. Check account balance.")
-        return
 
     order_type = mt5.ORDER_TYPE_BUY if signal["order_type"] == "buy" else mt5.ORDER_TYPE_SELL
     entry_price = get_current_price(symbol=symbol)
@@ -290,7 +285,21 @@ def execute_trade(signal):
     sl = signal["sl"]
     direction = signal["direction"]
     pattern = signal["pattern"]
+
     timeframe = signal["timeframe"]
+    loss=abs(signal["sl"] - signal["entry"]) # e.g 5
+    risk_percentage=0
+
+    if signal["timeframe"] in ["M30","H1"] :
+        risk_percentage = 0.003
+    else : 
+        risk_percentage = 0.001
+    risk = risk_percentage * balance # e.g 12
+    volume = max((risk // loss) * 0.01, 0.01) # e.g 0.02
+    
+    if volume <= 0:
+        print("Calculated volume is zero. Check account balance.")
+        return
 
     request = {
         "action": mt5.TRADE_ACTION_DEAL,

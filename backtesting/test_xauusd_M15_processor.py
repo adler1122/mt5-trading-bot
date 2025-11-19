@@ -39,8 +39,8 @@ class XAUUSD_M15_Processor:
         result = self.detector.detect(candles)
         if result in self.models:
             direction = result.split()[0]
-            if result != "bearish orderblock":
-                return {
+            #if result != "bearish orderblock":
+            return {
                     "direction": direction ,
                     "pattern": result,
                     "candles": candles
