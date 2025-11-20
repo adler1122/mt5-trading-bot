@@ -22,7 +22,7 @@ def get_entry_context(timestamp):
 
 
 def simulate_tp_sl(signal, future_candles, commission, mode):
-    direction = signal["direction"]
+    
     tp, sl = signal["tp"], signal["sl"]
     order_type = signal["order_type"]
 
