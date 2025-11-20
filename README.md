@@ -13,7 +13,7 @@ This project is a machine learning powered trading bot for MetaTrader 5, designe
   	Regression: TP ratio > 50%, TP : pred < true 
   	Stored best model per pattern/direction.
 3. 	Execution
-  	Backtesting engine for XAUUSD:
+  	Backtesting engine for XAUUSD: /n
   	Simulates trades candle-by-candle.
   	Handles ambiguous candles (both TP and SL hit) with best-case and worst-case resolution.
   	Real-time engine:
