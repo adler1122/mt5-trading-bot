@@ -295,6 +295,7 @@ def execute_trade(signal):
     else : 
         risk_percentage = 0.001
     risk = risk_percentage * balance # e.g 12
+    
     volume = max((risk // loss) * 0.01, 0.01) # e.g 0.02
     
     if volume <= 0:
